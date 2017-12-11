@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: IPAC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP118.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "IPAC_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\IPAC\IPAC.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP118.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/IPAC.pdb" /machine:I386 /def:".\IPAC.def" /out:"Release/IPAC.dll" /implib:"Release/IPAC.lib"  ".\Release\IPAC.obj" "
+<h3>Output Window</h3>
+Compiling...
+IPAC.cpp
+Linking...
+   Creating library Release/IPAC.lib and object Release/IPAC.exp
+
+
+
+<h3>Results</h3>
+IPAC.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

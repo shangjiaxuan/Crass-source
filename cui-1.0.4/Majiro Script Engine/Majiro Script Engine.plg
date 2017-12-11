@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Majiro Script Engine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP206.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MAJIROSCRIPTENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Majiro_Script_Engine___Win32_Release/" /Fd"Majiro_Script_Engine___Win32_Release/" /FD /c 
+"H:\Crass\cui-1.0.4\Majiro Script Engine\Majiro Script Engine.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP206.tmp" 
+Creating temporary file "q:\Temp\RSP207.tmp" with contents
+[
+kernel32.lib utility.lib package_core.lib /nologo /dll /incremental:no /pdb:"Majiro_Script_Engine___Win32_Release/Majiro Script Engine.pdb" /machine:I386 /def:".\Majiro Script Engine.def" /out:"Majiro_Script_Engine___Win32_Release/Majiro Script Engine.dll" /implib:"Majiro_Script_Engine___Win32_Release/Majiro Script Engine.lib" 
+".\Majiro_Script_Engine___Win32_Release\Majiro Script Engine.obj"
+]
+Creating command line "link.exe @q:\Temp\RSP207.tmp"
+<h3>Output Window</h3>
+Compiling...
+Majiro Script Engine.cpp
+Linking...
+   Creating library Majiro_Script_Engine___Win32_Release/Majiro Script Engine.lib and object Majiro_Script_Engine___Win32_Release/Majiro Script Engine.exp
+
+
+
+<h3>Results</h3>
+Majiro Script Engine.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

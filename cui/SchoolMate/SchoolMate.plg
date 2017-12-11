@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SchoolMate - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP167.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SCHOOLMATE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\SchoolMate\SchoolMate.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP167.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/SchoolMate.pdb" /machine:I386 /def:".\SchoolMate.def" /out:"Release/SchoolMate.dll" /implib:"Release/SchoolMate.lib"  .\Release\SchoolMate.obj "
+<h3>Output Window</h3>
+Compiling...
+SchoolMate.cpp
+Linking...
+   Creating library Release/SchoolMate.lib and object Release/SchoolMate.exp
+
+
+
+<h3>Results</h3>
+SchoolMate.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

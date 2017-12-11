@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MAIKA - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP148.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MAIKA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\MAIKA\MAIKA.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP148.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/MAIKA.pdb" /machine:I386 /def:".\MAIKA.def" /out:"Release/MAIKA.dll" /implib:"Release/MAIKA.lib"  .\Release\MAIKA.obj "
+<h3>Output Window</h3>
+Compiling...
+MAIKA.cpp
+Linking...
+   Creating library Release/MAIKA.lib and object Release/MAIKA.exp
+
+
+
+<h3>Results</h3>
+MAIKA.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

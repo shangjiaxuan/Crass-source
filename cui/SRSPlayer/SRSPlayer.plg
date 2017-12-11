@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SRSPlayer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP387.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SRSPLAYER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\SRSPlayer\SRSPlayer.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP387.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/SRSPlayer.pdb" /machine:I386 /def:".\SRSPlayer.def" /out:"Release/SRSPlayer.dll" /implib:"Release/SRSPlayer.lib"  .\Release\SRSPlayer.obj "
+<h3>Output Window</h3>
+Compiling...
+SRSPlayer.cpp
+Linking...
+   Creating library Release/SRSPlayer.lib and object Release/SRSPlayer.exp
+
+
+
+<h3>Results</h3>
+SRSPlayer.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

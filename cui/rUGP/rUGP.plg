@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: rUGP - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP1C9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RUGP_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\rUGP\rUGP.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP1C9.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/rUGP.pdb" /machine:I386 /def:".\rUGP.def" /out:"Release/rUGP.dll" /implib:"Release/rUGP.lib"  .\Release\rUGP.obj "
+<h3>Output Window</h3>
+Compiling...
+rUGP.cpp
+Linking...
+   Creating library Release/rUGP.lib and object Release/rUGP.exp
+
+
+
+<h3>Results</h3>
+rUGP.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,183 @@
+CODING_OBJS=coding/adx_decoder.o \
+    coding/g721_decoder.o \
+    coding/ima_decoder.o \
+    coding/ngc_afc_decoder.o \
+    coding/ngc_dsp_decoder.o \
+    coding/ngc_dtk_decoder.o \
+    coding/pcm_decoder.o \
+    coding/psx_decoder.o \
+    coding/xa_decoder.o \
+    coding/eaxa_decoder.o \
+    coding/ogg_vorbis_decoder.o \
+    coding/sdx2_decoder.o \
+    coding/ws_decoder.o \
+    coding/mpeg_decoder.o \
+    coding/acm_decoder.o \
+    coding/nwa_decoder.o \
+    coding/msadpcm_decoder.o \
+    coding/aica_decoder.o
+
+LAYOUT_OBJS=layout/ast_blocked.o \
+    layout/blocked.o \
+    layout/halpst_blocked.o \
+    layout/interleave.o \
+    layout/nolayout.o \
+    layout/xa_blocked.o \
+    layout/caf_blocked.o \
+    layout/ea_block.o \
+    layout/wsi_blocked.o \
+    layout/str_snds_blocked.o \
+    layout/ws_aud_blocked.o \
+    layout/interleave_byte.o \
+	layout/mus_acm_layout.o \
+    layout/aix_layout.o \
+    layout/ims_block.o \
+    layout/de2_blocked.o \
+    layout/xvas_block.o \
+    layout/vs_blocked.o \
+    layout/emff_blocked.o \
+    layout/thp_blocked.o \
+    layout/gsb_blocked.o \
+    layout/filp_blocked.o
+
+META_OBJS=meta/adx_header.o \
+    meta/afc_header.o \
+    meta/agsc.o \
+    meta/ast.o \
+    meta/brstm.o \
+    meta/halpst.o \
+    meta/nds_strm.o \
+    meta/ngc_adpdtk.o \
+    meta/rsf.o \
+    meta/rs03.o \
+    meta/ngc_dsp_std.o \
+    meta/Cstr.o \
+    meta/gcsw.o \
+    meta/ps2_ads.o \
+    meta/ps2_npsf.o \
+    meta/rwsd.o \
+    meta/psx_cdxa.o \
+    meta/ps2_rxw.o \
+    meta/ps2_int.o \
+    meta/ps2_exst.o \
+    meta/ps2_svag.o \
+    meta/ps2_mib.o \
+    meta/ps2_mic.o \
+    meta/raw.o \
+    meta/ps2_vag.o \
+    meta/psx_gms.o \
+    meta/ps2_str.o \
+    meta/ps2_ild.o \
+    meta/ps2_pnb.o \
+    meta/xbox_wavm.o \
+    meta/xbox_xwav.o \
+    meta/ea_header.o \
+    meta/ngc_caf.o \
+    meta/ps2_vpk.o \
+    meta/genh.o \
+    meta/ogg_vorbis_file.o \
+    meta/ps2_bmdx.o \
+    meta/aifc.o \
+    meta/str_snds.o \
+    meta/ws_aud.o \
+    meta/ahx.o \
+    meta/ivb.o \
+    meta/svs.o \
+    meta/riff.o \
+    meta/pos.o \
+    meta/nwa.o \
+    meta/ps2_rws.o \
+    meta/ps2_hgc1.o \
+    meta/xss.o \
+    meta/ps2_sl3.o \
+    meta/ps2_aus.o \
+    meta/fsb.o \
+    meta/rsd.o \
+    meta/rwx.o \
+    meta/xwb.o \
+    meta/ea_old.o \
+    meta/ps2_xa30.o \
+    meta/musc.o \
+    meta/musx.o \
+    meta/ps2_leg.o \
+    meta/ps2_filp.o \
+    meta/ps2_ikm.o \
+    meta/ps2_sfs.o \
+    meta/sat_dvi.o \
+    meta/ps2_bg00.o \
+    meta/dc_kcey.o \
+    meta/ps2_rstm.o \
+    meta/acm.o \
+    meta/mus_acm.o \
+    meta/ps2_kces.o \
+    meta/ps2_dxh.o \
+    meta/ps2_psh.o \
+    meta/sli.o \
+    meta/sfl.o \
+    meta/pcm.o \
+    meta/ps2_psw.o \
+    meta/ps2_rkv.o \
+    meta/ps2_vas.o \
+    meta/ps2_tec.o \
+    meta/ps2_enth.o \
+    meta/sdt.o \
+    meta/aix.o \
+    meta/ngc_tydsp.o \
+    meta/ngc_vjdsp.o \
+    meta/xbox_wvs.o \
+    meta/xbox_ims.o \
+    meta/xbox_stma.o \
+    meta/de2.o \
+    meta/dc_str.o \
+    meta/xbox_xmu.o \
+    meta/ngc_bh2pcm.o \
+    meta/xbox_xvas.o \
+    meta/sat_sap.o \
+    meta/sat_sap.o \
+    meta/dc_idvi.o \
+    meta/ps2_rnd.o \
+    meta/kraw.o \
+    meta/ps2_xa2.o \
+    meta/idsp.o \
+    meta/ngc_ymf.o \
+    meta/nds_sad.o \
+    meta/ps2_ccc.o \
+    meta/psx_fag.o \
+    meta/ps2_mihb.o \
+    meta/ngc_pdt.o \
+    meta/wii_mus.o \
+    meta/dc_asd.o \
+    meta/naomi_spsd.o \
+    meta/bgw.o \
+    meta/ps2_ass.o \
+    meta/ngc_waa_wac_wad_wam.o \
+    meta/ps2_seg.o \
+    meta/str_asr.o \
+    meta/zwdsp.o \
+    meta/gca.o \
+    meta/ish_isd.o \
+    meta/spt_spd.o \
+    meta/ydsp.o \
+    meta/gsp_gsb.o \
+    meta/ngc_ssm.o \
+    meta/msvp.o \
+    meta/ps2_joe.o \
+    meta/vgs.o \
+    meta/vs.o \
+    meta/dc_wav_dcs.o \
+    meta/wii_smp.o \
+    meta/ss_stream.o \
+    meta/emff.o \
+    meta/thp.o \
+    meta/wii_sts.o
+
+OBJECTS=vgmstream.o streamfile.o util.o $(CODING_OBJS) $(LAYOUT_OBJS) $(META_OBJS)
+
+libvgmstream.a: $(OBJECTS)
+	$(AR) crs libvgmstream.a $(OBJECTS)
+
+vgmstream-deps:
+	$(CC) $(CFLAGS) -M -o vgmstream-deps
+
+clean:
+	rm -f $(OBJECTS) libvgmstream.a

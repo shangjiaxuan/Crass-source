@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DaiSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP24C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DAISYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\DaiSystem\DaiSystem.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP24C.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib shlwapi.lib /nologo /dll /incremental:no /pdb:"Release/DaiSystem.pdb" /machine:I386 /def:".\DaiSystem.def" /out:"Release/DaiSystem.dll" /implib:"Release/DaiSystem.lib"  .\Release\DaiSystem.obj "
+<h3>Output Window</h3>
+Compiling...
+DaiSystem.cpp
+Linking...
+   Creating library Release/DaiSystem.lib and object Release/DaiSystem.exp
+
+
+
+<h3>Results</h3>
+DaiSystem.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

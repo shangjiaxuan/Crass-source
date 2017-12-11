@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SoW - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP13F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SOW_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\SoW\SoW.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP13F.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/SoW.pdb" /machine:I386 /def:".\SoW.def" /out:"Release/SoW.dll" /implib:"Release/SoW.lib"  ".\Release\SoW.obj" "
+<h3>Output Window</h3>
+Compiling...
+SoW.cpp
+H:\Crass\cui-1.0.4\SoW\SoW.cpp(198) : warning C4715: 'SoW_register_cui' : not all control paths return a value
+Linking...
+   Creating library Release/SoW.lib and object Release/SoW.exp
+
+
+
+<h3>Results</h3>
+SoW.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

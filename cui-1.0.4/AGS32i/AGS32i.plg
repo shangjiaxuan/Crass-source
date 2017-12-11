@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AGS32i - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP2C9.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AGS32I_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\AGS32i\AGS32i.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP2C9.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/AGS32i.pdb" /machine:I386 /def:".\AGS32i.def" /out:"Release/AGS32i.dll" /implib:"Release/AGS32i.lib"  ".\Release\AGS32i.obj" "
+<h3>Output Window</h3>
+Compiling...
+AGS32i.cpp
+Linking...
+   Creating library Release/AGS32i.lib and object Release/AGS32i.exp
+
+
+
+<h3>Results</h3>
+AGS32i.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

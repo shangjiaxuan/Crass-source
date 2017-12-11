@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LiveMaker - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP79.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LIVEMAKER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\LiveMaker\LiveMaker.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP79.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/LiveMaker.pdb" /machine:I386 /def:".\LiveMaker.def" /out:"Release/LiveMaker.dll" /implib:"Release/LiveMaker.lib"  .\Release\LiveMaker.obj "
+<h3>Output Window</h3>
+Compiling...
+LiveMaker.cpp
+Linking...
+   Creating library Release/LiveMaker.lib and object Release/LiveMaker.exp
+
+
+
+<h3>Results</h3>
+LiveMaker.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

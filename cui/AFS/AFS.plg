@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AFS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP77.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AFS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\AFS\AFS.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP77.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/AFS.pdb" /machine:I386 /def:".\AFS.def" /out:"Release/AFS.dll" /implib:"Release/AFS.lib"  .\Release\AFS.obj .\Release\tim2.obj "
+<h3>Output Window</h3>
+Compiling...
+AFS.cpp
+H:\Crass\cui\AFS\tim2.h(87) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+Linking...
+   Creating library Release/AFS.lib and object Release/AFS.exp
+
+
+
+<h3>Results</h3>
+AFS.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

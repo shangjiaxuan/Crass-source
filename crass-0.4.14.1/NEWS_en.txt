@@ -1,0 +1,14 @@
+﻿ Ver 0.4.14.1 痴漢公賊
+【cui】
+·cui YU-RIS updates to Alpha 1.0.0.
+use suffix identifier '.' to find the decryption key for resource name.
+·cui DXArchive updates to Beta 1.0.0.
+support the game "明日はきっと、晴れますように -She said so，and prayed to cloudy skies.-".
+·cui kirikiri2 updates to Final 1.5.5.
+add game=himesyo decryption parameter.
+·cui NeXAS updates to Beta 1.0.1.
+accurately matching for pac archive.
+·cui NekoBoard updates to Beta 1.1.3.
+avoid using mismatched method to extract archive.
+·cui ISM updates to Alpha 1.0.2.
+enhance the automatic discovery for variable-length index entry.

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: acui_core - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP182.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ACUI_CORE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\acui_core\cui_core.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP182.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib shlwapi.lib /nologo /dll /incremental:no /pdb:"Release/acui_core.pdb" /machine:I386 /def:".\acui_core.def" /out:"Release/acui_core.dll" /implib:"Release/acui_core.lib"  .\Release\aui_core.obj .\Release\cui_core.obj "
+<h3>Output Window</h3>
+Compiling...
+cui_core.cpp
+Linking...
+   Creating library Release/acui_core.lib and object Release/acui_core.exp
+
+
+
+<h3>Results</h3>
+acui_core.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

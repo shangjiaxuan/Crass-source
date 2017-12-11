@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Illusion - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDF.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ILLUSION_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Illusion\Illusion.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDF.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Illusion.pdb" /machine:I386 /def:".\Illusion.def" /out:"Release/Illusion.dll" /implib:"Release/Illusion.lib"  .\Release\Illusion.obj "
+<h3>Output Window</h3>
+Compiling...
+Illusion.cpp
+Linking...
+   Creating library Release/Illusion.lib and object Release/Illusion.exp
+
+
+
+<h3>Results</h3>
+Illusion.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

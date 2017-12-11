@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: losterika - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPEC.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LOSTERIKA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\losterika\losterika.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPEC.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/losterika.pdb" /machine:I386 /def:".\losterika.def" /out:"Release/losterika.dll" /implib:"Release/losterika.lib"  ".\Release\losterika.obj" "
+<h3>Output Window</h3>
+Compiling...
+losterika.cpp
+Linking...
+   Creating library Release/losterika.lib and object Release/losterika.exp
+
+
+
+<h3>Results</h3>
+losterika.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

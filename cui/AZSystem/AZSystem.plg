@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AZSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP205.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AZSYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\AZSystem\AZSystem.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP205.tmp" 
+Creating temporary file "q:\Temp\RSP206.tmp" with contents
+[
+kernel32.lib utility.lib zdll.lib locale.lib /nologo /dll /incremental:no /pdb:"Release/AZSystem.pdb" /machine:I386 /def:".\AZSystem.def" /out:"Release/AZSystem.dll" /implib:"Release/AZSystem.lib" 
+.\Release\AZSystem.obj
+.\Release\ewf_crc.obj
+.\Release\mt19937ar.obj
+".\Release\SFMT-132049.obj"
+".\Release\SFMT-19937.obj"
+]
+Creating command line "link.exe @q:\Temp\RSP206.tmp"
+<h3>Output Window</h3>
+Compiling...
+AZSystem.cpp
+H:\Crass\cui\AZSystem\AZSystem.cpp(1530) : warning C4101: 'key' : unreferenced local variable
+H:\Crass\cui\AZSystem\AZSystem.cpp(1530) : warning C4101: 'priv' : unreferenced local variable
+H:\Crass\cui\AZSystem\AZSystem.cpp(1562) : warning C4700: local variable 'ret' used without having been initialized
+Linking...
+   Creating library Release/AZSystem.lib and object Release/AZSystem.exp
+
+
+
+<h3>Results</h3>
+AZSystem.dll - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

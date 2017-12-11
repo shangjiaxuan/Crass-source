@@ -1,0 +1,31 @@
+noinst_LTLIBRARIES = liblayout.la
+
+AM_CFLAGS = -Wall @CFLAGS@ -I$(top_builddir) -I$(top_srcdir) 
+AM_MAKEFLAGS=-f Makefile.unix
+
+liblayout_la_LDFLAGS = 
+liblayout_la_SOURCES = 
+liblayout_la_SOURCES += ast_blocked.c
+liblayout_la_SOURCES += blocked.c
+liblayout_la_SOURCES += caf_blocked.c
+liblayout_la_SOURCES += ea_block.c
+liblayout_la_SOURCES += halpst_blocked.c
+liblayout_la_SOURCES += interleave.c
+liblayout_la_SOURCES += nolayout.c
+liblayout_la_SOURCES += xa_blocked.c
+liblayout_la_SOURCES += wsi_blocked.c
+liblayout_la_SOURCES += str_snds_blocked.c
+liblayout_la_SOURCES += ws_aud_blocked.c
+liblayout_la_SOURCES += interleave_byte.c
+liblayout_la_SOURCES += mus_acm_layout.c
+liblayout_la_SOURCES += aix_layout.c
+liblayout_la_SOURCES += ims_block.c
+liblayout_la_SOURCES += de2_blocked.c
+liblayout_la_SOURCES += xvas_block.c
+liblayout_la_SOURCES += vs_blocked.c
+liblayout_la_SOURCES += emff_blocked.c
+liblayout_la_SOURCES += thp_blocked.c
+liblayout_la_SOURCES += gsb_blocked.c
+liblayout_la_SOURCES += filp_blocked.c
+
+EXTRA_DIST = layout.h

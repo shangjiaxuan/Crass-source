@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: io_request - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPCC.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "IO_REQUEST_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\io_request\io_request.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPCC.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/io_request.pdb" /machine:I386 /out:"Release/io_request.dll" /implib:"Release/io_request.lib"  .\Release\io_request.obj "
+<h3>Output Window</h3>
+Compiling...
+io_request.cpp
+Linking...
+   Creating library Release/io_request.lib and object Release/io_request.exp
+
+
+
+<h3>Results</h3>
+io_request.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: G2EngineSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP91.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "G2ENGINESYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\G2EngineSystem\G2EngineSystem.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP91.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/G2EngineSystem.pdb" /machine:I386 /out:"Release/G2EngineSystem.dll" /implib:"Release/G2EngineSystem.lib"  .\Release\G2EngineSystem.obj "
+<h3>Output Window</h3>
+Compiling...
+G2EngineSystem.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+G2EngineSystem.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

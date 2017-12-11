@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VALKYRIA - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP9E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VALKYRIA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\VALKYRIA\VALKYRIA.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP9E.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/VALKYRIA.pdb" /machine:I386 /def:".\VALKYRIA.def" /out:"Release/VALKYRIA.dll" /implib:"Release/VALKYRIA.lib"  .\Release\VALKYRIA.obj "
+<h3>Output Window</h3>
+Compiling...
+VALKYRIA.cpp
+Linking...
+   Creating library Release/VALKYRIA.lib and object Release/VALKYRIA.exp
+
+
+
+<h3>Results</h3>
+VALKYRIA.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

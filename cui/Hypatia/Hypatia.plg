@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Hypatia - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP566.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "HYPATIA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Hypatia\Hypatia.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP566.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Hypatia.pdb" /machine:I386 /def:".\Hypatia.def" /out:"Release/Hypatia.dll" /implib:"Release/Hypatia.lib"  .\Release\Hypatia.obj .\Release\qsmodel.obj .\Release\rangecod.obj "
+<h3>Output Window</h3>
+Compiling...
+Hypatia.cpp
+Linking...
+   Creating library Release/Hypatia.lib and object Release/Hypatia.exp
+
+
+
+<h3>Results</h3>
+Hypatia.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

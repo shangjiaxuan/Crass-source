@@ -1,0 +1,116 @@
+////////// ////////// //////////
+
+ 0 0 0 0 0 0 0 0 0	 NBA_EPYTW	 0	 0	 005	 CAC_EPYTI	 AET.raeW/raeW	  meti_200_ecca 		 231
+ ûï//
+ 0 0 0 0 0 0 0 0 0	 SSX_EPYTW	 0	 0	 005	 TLC_EPYTI	 AET.raeW/raeW	 meti_ssx_500_raeW		 131
+ ûïßêQÇXÉfÉ‘ÇÁÇ//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0005	 DLO_EPYTI	 AET.61i/meti	  61i	 	 031
+gÉ[ÅmÉ†íQèúï	ETON_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 DLO_EPYTI	 AET.51i/meti	  51i	 	 921
+ÀÇ™ÇﬂÇ	SSARG_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 DLO_EPYTI	 AET.41i/meti	  41i	 	 331//
+÷óÒé	ZLKN_OI////
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0001	 DLO_EPYTI	 AET.31i/meti	  31i	 	 821
+ãÉ[Å{É	LLAB_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0051	 DLO_EPYTI	 AET.21i/meti	  21i	 	 131//
+ÌäÀéçí	IRAH_OI////
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0002	 PAW_EPYTI	 AET.11i/meti	  11i		 721
+⁄ï	PAEW_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0003	 PAW_EPYTI	 AET.01i/meti	  01i	 	 621
+gÉbÉoÉ	TAB_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 DLO_EPYTI	 AET.90i/meti	  90i	 	 821//
+gÉìÉ[ÉåÉvÉ	ZERP_OI////
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 TAW_EPYTI	 AET.80i/meti	  80i	 	 721//
+XÉ[ÅÖÉWÉ‘ê	CUJR_OI////
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 TAW_EPYTI	 AET.70i/meti	  70i	 	 621//
+XÉ[ÅÖÉWÉ¬ê	CUJB_OI////
+
+ 0 0 0 0 0 0 0 0 0	0	 0	 001	 0001	 DLO_EPYTI	 AET.60i/meti	  60i	 	 521
+uÉ[ÅnÉ	BRAH_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 05	 001	  DLO_EPYTI	 AET.50i/meti	  50i	 	 421
+±ÇÃÇ´Ç	HSUM_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 0	 01	 001	  DLO_EPYTI	 AET.40i/meti	  40i	 	 321
+Úñ≤ï	DWOP_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 1	 1	 005	  DLO_EPYTI	 AET.30i/meti	  30i	 	 221
+‹çAîòó	DWTS_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 1	 51	 005	 DLO_EPYTI	 AET.20i/meti	  20i	 	 121
+ÚñZõ	DORE_OI//
+
+ 0 0 0 0 0 0 0 0 0	 0	 1	 1	 005	  DLO_EPYTI	 AET.10i/meti	 10i	 	 021
+ãÉgÉ{É	LTOB_OI//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0051	 LOD_EPYTI	 AET.meti_esab_000_u/meti_u_rahc/uoygnin	  meti_u_rahc	 	 711
+METI_ESAB_000_U_DI//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0051	 LOD_EPYTI	 AET.meti_esab_000_r/meti_r_rahc/uoygnin	 meti_r_rahc	 	 611
+METI_ESAB_000_R_DI//
+`ålê//
+///// 0350_TSET_METI /////
+ 0 0 0 0 0 0 0 0 0		0	 0	 0	 005	 OHS_FED_EPYTI	 AET.raeW/raeW		meti_seohs	 	 511
+OFED_SEOHS_U_CI//
+Cå//
+ 0 0 0 0 0 0 0 0 0		0	 0	 0	 0003	 TNP_FED_EPYTI	 AET.raeW/raeW	 meti_ofed_stnap		 311
+OFED_STNAP_U_CI//
+cÉìÉpÉ//
+ 0 0 0 0 0 0 0 0 0		 0	 0	 0	 005	 CAU_EPYTI	 AET.raeW/raeW	  meti_100_b_ecca 		 111
+100_B_ECCA_U_CI//
+ÄÉeÉCÉAÉıîïëgêºî∫â//
+		 0 0 0 0 0 0 0 0 0		 0	 0	 0	 005	 ARB_FED_EPYTI	 AET.raeW/raeW		 meti_ofed_arb 		 801
+OFED_ARB_B_CI//
+âÉuÉ//
+				 0 0 0 0 0 0 0 0 0		 0	 0	 0	 005	 CAC_EPYTI	 AET.raeW/raeW		 meti_100_ecca 		 701
+100_ECCA_B_CI//
+¸èïëîïÃëgê//
+ 0 0 0 0 0 0 0 0 0	NBA_EPYTW	 0	 0	 005	 TLC_EPYTI	 AET.raeW/raeW	 meti_nba_700_raeW 		 87
+NBA_700_RAEW_B_CI//
+		 0 0 0 0 0 0 0 0 0	SSX_EPYTW	 0	 0	 005	 TLC_EPYTI	 AET.raeW/raeW	meti_ssx_700_raeW 		 47
+SSX_700_RAEW_B_CI//
+		 0 0 0 0 0 0 0 0 0	 SSX_EPYTW	 0	 0	 005	 TLC_EPYTI	 AET.raeW/raeW	 meti_ssx_100_raeW 		 94
+SSX_100_RAEW_B_CI//
+		 0 0 0 0 0 0 0 0 0	 XXX_EPYTW	 0	 0	 005	 TLC_FED_EPYTI	 AET.raeW/raeW	  meti_xxx_ofed_raeW 		 84
+OFED_RAEW_B_CI//
+ÄÉeÉCÉAÉnåûï//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 005	 TAH_FED_EPYTI	 AET.raeW/raeW	  meti_ofed_h_ecca 		 34
+OFED_H_ECCA_H_CI//
+ÄÉeÉCÉAÉqéXñ//
+		 0 0 0 0 0 0 0 0 0		 0	 0	 0	 005	 RAH_FED_EPYTI	 AET.raeW/raeW		meti_ofed_riah 		 73
+OFED_RIAH_H_CI//
+ÄÉeÉCÉAÉnåîï™ì//
+ 0 0 0 0 0 0 0 0 0	0	 02	 3	 0002	 DOOF_EPYTI	AET.30i/meti  300_wi 		 62
+ELTTOBW_WIjÅËÇ¸ìÖêiÅõìÖê//
+ 0 0 0 0 0 0 0 0 0	0	 02	 3	 005	 DOOF_EPYTI	 AET.30i/meti  200_wi 		 52
+ECIUJ_WI		XÉ[ÅÖÉWÉ//
+ 0 0 0 0 0 0 0 0 0	 0	 05	 0	 005	DOOF_EPYTI	 AET.30i/meti  100_wi 		 42
+XAM_FI = ELTTOB_WI			õìÖê//
+ 5 0 5 01- 0 0 0 0 0	 0	 0	 07	 005	TAE_HCNUL_EPYTI	 AET.60i/meti  020_fi 		 91
+F_XOB_UL_FI		ñìŸï®Ç//
+ 01 0 5 0 0 0 0 0 0	 0	 0	 04	 005	 TAE_EPYTI	 AET.60i/meti  610_fi 		 51
+W_NEKIHC_FI		ËÇ∆Ç´Ç‚Ç//
+ 01 0 5 01- 0 0 0 0 0	 0	 0	 02	 005	 TAE_EPYTI	 AET.50i/meti  110_fi		 01
+R_YRRUC_FI	XÉCÉâÉ[ÅåÉJÉ//
+ 05- 52- 0 0 0 0 0 0 0	 0	 0	 01	 005	 TAE_EPYTI	 AET.50i/meti	700_fi		 6
+R_ESUOM_FI	˜ì∂ê~ÉYÉlÉ//
+ 0 0 0 0 0 0 0 0 0	 0	 02	 02	 005	 TAE_EPYTI	 AET.50i/meti	600_fi		 5
+R_NEKIHC_FI		˜ì∂êπí//
+ 2 0 1 1- 0 0 0 0 0	 0	 02	 52	 005	 TAE_EPYTI	 AET.50i/meti	 500_fi		 4
+R_FEEB_FI		˜ì∂êçã//
+ 5 0 5 01- 0 0 0 0 0	 0	 0	 52	 005	TAE_HCNUL_EPYTI	 AET.50i/meti	400_fi		 3
+XOB_UL_FI		†îñìŸï//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 0002	 HTO_EPYTI	AET.300_fi/300_fi/meti_wen 300_fi		 2
+VT_FI		uÇsÇ//
+ 0 0 0 0 0 0 0 0 0	 0	 0	 0	 00001	 HTO_EPYTI	AET.200_fi/200_fi/meti_wen	 200_fi		 1
+ONAIP_FI	mÉAÉsÉ//
+ 0 0 0 0 0 0 0 0 0	0	0	0	001	ORE_EPYTI	AET.100_fi/100_fi/meti_wen	100_fi		0
+okoniKweN_FI	±ÇÃÇ´Ç//
+//

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GMMSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP5F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "GMMSYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\GMMSystem\GMMSystem.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP5F.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/GMMSystem.pdb" /machine:I386 /def:".\GMMSystem.def" /out:"Release/GMMSystem.dll" /implib:"Release/GMMSystem.lib"  ".\Release\GMMSystem.obj" "
+<h3>Output Window</h3>
+Compiling...
+GMMSystem.cpp
+Linking...
+   Creating library Release/GMMSystem.lib and object Release/GMMSystem.exp
+
+
+
+<h3>Results</h3>
+GMMSystem.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

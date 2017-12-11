@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SaiSys - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP151.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SAISYS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\SaiSys\SaiSys.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP151.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/SaiSys.pdb" /machine:I386 /def:".\SaiSys.def" /out:"Release/SaiSys.dll" /implib:"Release/SaiSys.lib"  ".\Release\SaiSys.obj" "
+<h3>Output Window</h3>
+Compiling...
+SaiSys.cpp
+Linking...
+   Creating library Release/SaiSys.lib and object Release/SaiSys.exp
+
+
+
+<h3>Results</h3>
+SaiSys.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

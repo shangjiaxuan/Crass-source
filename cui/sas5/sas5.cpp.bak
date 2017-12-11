@@ -1,0 +1,668 @@
+#include <windows.h>
+#include <tchar.h>
+#include <crass_types.h>
+#include <acui.h>
+#include <cui.h>
+#include <package.h>
+#include <resource.h>
+#include <cui_error.h>
+#include <utility.h>
+#include <stdio.h>
+
+struct acui_information sas5_cui_information = {
+	_T("秋山構平"),			/* copyright */
+	_T("Solfa Standard Novel System"),	/* system */
+	_T(".iar .sec5"),		/* package */
+	_T("1.0.0"),			/* revision */
+	_T("痴汉公贼"),			/* author */
+	_T("2008-1-3 11:20"),	/* date */
+	NULL,					/* notion */
+	ACUI_ATTRIBUTE_LEVEL_STABLE
+};	
+
+#pragma pack (1)
+typedef struct {
+	s8 magic[4];		// "iar "
+	u32 type;
+	u32 header_size;	
+} iar_header_t;
+
+typedef struct {
+	u32 info_header_size;
+	u32 build_time;
+	u32 reserved;
+	u32 unknown_entries;
+	u32 index_entries;
+} iar_info_header_t;
+
+typedef struct {
+	u16 flags;			// 低6为不能全为0；bit9 - data是否存在data_offset
+	u8 pad;
+	u8 is_compressed;	// 0 or 1
+	u32 unknown0;		// (0)肯定是一个长度字段
+	u32 uncomprlen;
+	u32 palette_length;
+	
+	u32 comprlen;
+	u32 unknown1;		// (0)
+	/* 文字显示的起始位置的坐标(10,10)视为原点的话，
+	 * 那么该这里的坐标是相对于文字显示的起始位置的相对坐标的负值
+	 *（背景框为10，表示背景框左上角位于该原点(-10,-10)的位置上），
+	 * 右边的方框位置自然都是负值）
+	 */
+	u32 orig_x;
+	u32 orig_y;
+	
+	u32 width;
+	u32 height;
+	u32 pitch;
+	u32 unknown7;
+	
+	u32 left_top_x;		// 左上角相对于绘图背景原点的坐标（不是屏幕原点坐标）
+	u32 left_top_y;
+	u32 right_top_x;	// 右上角相对于绘图背景右上角的坐标（不是屏幕原点坐标）
+	u32 right_top_y;
+} iar_dat_header_t;
+#pragma pack ()
+	
+typedef struct {
+	s8 name[MAX_PATH];
+	u32 offset;
+	u32 length;
+} my_iar_entry_t;
+
+#define flag_shift	\
+	flag >>= 1;	\
+	if (flag <= 0xffff) {	\
+		flag = compr[0] | (compr[1] << 8) | 0xffff0000;	\
+		compr += 2;	\
+	}
+	
+static void iar_uncompress(BYTE *uncompr, BYTE *compr)
+{
+	u32 flag = 0;
+
+	while (1) {
+		u32 offset, copy_bytes;
+
+		flag_shift;
+		if (flag & 1)
+			*uncompr++ = *compr++;
+		else {
+			u32 tmp;
+			
+			flag_shift;
+			if (flag & 1) {
+				offset = 1;
+				flag_shift;
+				tmp = flag & 1;
+				flag_shift;
+				if (!(flag & 1)) {
+					offset = 513;
+					flag_shift;
+					if (!(flag & 1)) {
+						offset = 1025;
+						flag_shift;
+						tmp = (flag & 1) | (tmp << 1);
+						flag_shift;
+						if (!(flag & 1)) {
+							offset = 2049;
+							flag_shift;
+							tmp = (flag & 1) | (tmp << 1);
+							flag_shift;
+							if (!(flag & 1)) {
+								offset = 4097;
+								flag_shift;
+								tmp = (flag & 1) | (tmp << 1);
+							}
+						}
+					}
+				}
+				offset = offset + ((tmp << 8) | *compr++);
+				flag_shift;
+				if (flag & 1)
+					copy_bytes = 3;
+				else {
+					flag_shift;
+					if (flag & 1)
+						copy_bytes = 4;
+					else {
+						flag_shift;
+						if (flag & 1)
+							copy_bytes = 5;
+						else {
+							flag_shift;
+							if (flag & 1)
+								copy_bytes = 6;
+							else {
+								flag_shift;
+								if (flag & 1) {
+									flag_shift;
+									if (flag & 1)
+										copy_bytes = 8;
+									else
+										copy_bytes = 7;
+								} else {
+									flag_shift;
+									if (flag & 1) {
+										copy_bytes = *compr++ + 17;
+									} else {
+										flag_shift;
+										copy_bytes = (flag & 1) << 2;
+										flag_shift;
+										copy_bytes |= (flag & 1) << 1;
+										flag_shift;
+										copy_bytes |= flag & 1;
+										copy_bytes += 9;
+									}
+								}
+							}
+						}
+					}
+				}
+			} else {	// 外while外
+				flag_shift;
+				copy_bytes = 2;
+				if (flag & 1) {
+					flag_shift;
+					offset = (flag & 1) << 10;
+					flag_shift;
+					offset |= (flag & 1) << 9;
+					flag_shift;
+					offset = (offset | *compr++ | ((flag & 1) << 8)) + 256;
+				} else {
+					offset = *compr++ + 1;
+					if (offset == 256)
+						break;
+				}
+			}
+			for (DWORD i = 0; i < copy_bytes; i++) {
+				*uncompr = *(uncompr - offset);
+				uncompr++;
+			}
+		}
+	}
+}
+
+static void *my_malloc(DWORD len)
+{
+	return malloc(len);
+}
+
+/********************* iar *********************/
+
+static int sas5_iar_match(struct package *pkg)
+{
+	iar_header_t iar_header;
+	iar_info_header_t iar_info;
+		
+	if (!pkg)
+		return -CUI_EPARA;
+	
+	if (pkg->pio->open(pkg, IO_READONLY))
+		return -CUI_EOPEN;
+	
+	if (pkg->pio->read(pkg, &iar_header, sizeof(iar_header))) {
+		pkg->pio->close(pkg);
+		return -CUI_EREAD;
+	}
+
+	if (strncmp(iar_header.magic, "iar ", 4) 
+			|| (iar_header.type != 1 && iar_header.type != 2 && iar_header.type != 3)
+			|| iar_header.header_size < sizeof(iar_header)) {
+		pkg->pio->close(pkg);
+		return -CUI_EMATCH;
+	}
+	
+	if (pkg->pio->read(pkg, &iar_info, sizeof(iar_info))) {
+		pkg->pio->close(pkg);
+		return -CUI_EREAD;
+	}
+	
+	if (iar_info.info_header_size < sizeof(iar_info) || iar_info.index_entries > iar_info.unknown_entries) {
+		pkg->pio->close(pkg);
+		return -CUI_EMATCH;
+	}
+	
+	return 0;
+}
+
+static int sas5_iar_extract_directory(struct package *pkg,
+									  struct package_directory *pkg_dir)
+{
+	iar_header_t iar_header;
+	iar_info_header_t iar_info;
+	my_iar_entry_t *index_buffer;
+	DWORD index_length;
+	DWORD offset_buffer_length;
+	SIZE_T fsize;
+	void *offset_buffer;
+
+	if (!pkg || !pkg_dir)
+		return -CUI_EPARA;
+	
+	if (pkg->pio->length_of(pkg, &fsize))
+		return -CUI_ELEN;
+
+	if (pkg->pio->readvec(pkg, &iar_header, sizeof(iar_header), 0, IO_SEEK_SET))
+		return -CUI_EREADVEC;
+	
+	if (pkg->pio->read(pkg, &iar_info, sizeof(iar_info)))
+		return -CUI_EREAD;
+	
+	index_length = iar_info.index_entries * sizeof(my_iar_entry_t);
+	index_buffer = (my_iar_entry_t *)malloc(index_length);
+	if (!index_buffer)
+		return -CUI_EMEM;
+	
+	if (iar_header.type < 3) {		
+		offset_buffer_length = iar_info.index_entries * 4;
+		offset_buffer = malloc(offset_buffer_length);
+		if (!offset_buffer) {
+			free(index_buffer);
+			return -CUI_EMEM;
+		}
+		
+		if (pkg->pio->read(pkg, offset_buffer, offset_buffer_length)) {
+			free(offset_buffer);
+			free(index_buffer);
+			return -CUI_EREAD;
+		}
+		
+		for (DWORD i = 0; i < iar_info.index_entries - 1; i++) {
+			index_buffer[i].offset = ((u32 *)offset_buffer)[i];
+			index_buffer[i].length = ((u32 *)offset_buffer)[i+1] - ((u32 *)offset_buffer)[i];
+			sprintf(index_buffer[i].name, "%08d", i);
+		}
+		sprintf(index_buffer[i].name, "%08d", i);
+		index_buffer[i].offset = ((u32 *)offset_buffer)[i];
+		index_buffer[i].length = fsize - ((u32 *)offset_buffer)[i];
+	} else {
+		offset_buffer_length = iar_info.index_entries * 8;
+		offset_buffer = malloc(offset_buffer_length);
+		if (!offset_buffer) {
+			free(index_buffer);
+			return -CUI_EMEM;
+		}
+		
+		if (pkg->pio->read(pkg, offset_buffer, offset_buffer_length)) {
+			free(offset_buffer);
+			free(index_buffer);
+			return -CUI_EREAD;
+		}
+		
+		for (DWORD i = 0; i < iar_info.index_entries - 1; i++) {
+			index_buffer[i].offset = (u32)((u64 *)offset_buffer)[i];
+			index_buffer[i].length = (u32)((u64 *)offset_buffer)[i+1] - (u32)((u64 *)offset_buffer)[i];
+			sprintf(index_buffer[i].name, "%08d", i);
+		}
+		sprintf(index_buffer[i].name, "%08d", i);
+		index_buffer[i].offset = (u32)((u64 *)offset_buffer)[i];
+		index_buffer[i].length = fsize - (u32)((u64 *)offset_buffer)[i];
+	}
+	free(offset_buffer);
+	package_set_private(pkg, (void *)iar_header.type);
+
+	pkg_dir->index_entries = iar_info.index_entries;
+	pkg_dir->directory = index_buffer;
+	pkg_dir->directory_length = index_length;
+	pkg_dir->index_entry_length = sizeof(my_iar_entry_t);
+
+	return 0;
+}
+
+static int sas5_iar_parse_resource_info(struct package *pkg,
+										struct package_resource *pkg_res)
+{
+	my_iar_entry_t *my_iar_entry;
+
+	if (!pkg || !pkg_res)
+		return -CUI_EPARA;
+
+	my_iar_entry = (my_iar_entry_t *)pkg_res->actual_index_entry;
+	strncpy(pkg_res->name, my_iar_entry->name, 64);
+	pkg_res->name_length = -1;			/* -1表示名称以NULL结尾 */
+	pkg_res->raw_data_length = my_iar_entry->length;
+	pkg_res->actual_data_length = 0;	/* 数据都是明文 */
+	pkg_res->offset = my_iar_entry->offset;
+
+	return 0;
+}
+
+static int sas5_iar_extract_resource(struct package *pkg,
+									 struct package_resource *pkg_res)
+{
+	BYTE *compr, *uncompr, *palette;
+	iar_dat_header_t header;
+	int type;
+	DWORD offset;
+	int bpp;
+	
+	if (!pkg || !pkg_res)
+		return -CUI_EPARA;
+
+	if (pkg_res->flags & PKG_RES_FLAG_RAW) {
+		compr = (BYTE *)pkg->pio->readvec_only(pkg, pkg_res->raw_data_length, pkg_res->offset, IO_SEEK_SET);
+		if (!compr)
+			return -CUI_EREADVECONLY;
+
+		pkg_res->raw_data = compr;
+		return 0;
+	}
+	
+	type = (int)package_get_private(pkg);
+	if (type == 1) {
+		if (pkg->pio->readvec(pkg, &header, sizeof(header) - 16, pkg_res->offset, IO_SEEK_SET))
+			return -CUI_EREADVEC;
+		header.left_top_x = 0;
+		header.left_top_y = 0;
+		header.right_top_x = 0;
+		header.right_top_y = 0;
+		offset = pkg_res->offset + sizeof(header) - 16;
+	} else {
+		if (pkg->pio->readvec(pkg, &header, sizeof(header), pkg_res->offset, IO_SEEK_SET))
+			return -CUI_EREADVEC;
+		offset = pkg_res->offset + sizeof(header);
+	}
+	
+	if (!(header.flags & 0x3f) || header.is_compressed >= 2 || !header.comprlen || !header.uncomprlen)
+		return -CUI_EMATCH;
+
+	if (header.flags & 0x0200) {
+		palette = (BYTE *)malloc(header.palette_length);
+		if (!palette)
+			return -CUI_EMEM;
+		
+		if (pkg->pio->readvec(pkg, palette, header.palette_length, offset, IO_SEEK_SET)) {
+			free(palette);
+			return -CUI_EREADVEC;
+		}
+		offset += header.palette_length;
+	} else
+		palette = NULL;
+	
+	compr = (BYTE *)pkg->pio->readvec_only(pkg, header.comprlen, offset, IO_SEEK_SET);
+	if (!compr)
+		return -CUI_EREADVECONLY;
+	
+	uncompr = (BYTE *)malloc(header.uncomprlen);
+	if (!uncompr) {
+		free(palette);
+		return -CUI_EMEM;
+	}
+
+	if (header.is_compressed)
+		iar_uncompress(uncompr, compr);
+	else
+		memcpy(uncompr, compr, header.uncomprlen);
+
+//	printf("%x %x(%d) %x %x %x @ %p\n", header.width,header.pitch,header.pitch/header.width,header.height,
+//		header.palette_length, header.uncomprlen,palette);
+//	printf("%x\n", header.flags);
+	header.flags &= 0x093f;
+	
+//	bpp = header.pitch / header.width;
+
+	switch (header.flags) {
+	case 0x01:
+		bpp = 8;
+		break;
+	case 0x02:
+		bpp = 8;
+		break;
+	case 0x1c:	//
+		bpp = 24;
+		break;
+	case 0x3c:	//
+		bpp = 32;
+		break;
+	case 0x11c:
+		break;
+	case 0x13c:
+		break;
+	/* TODO */
+	case 0x81c:	// 似乎是资源段数据
+		bpp = 24;
+		break;
+	case 0x83c:		// 似乎是资源段数据
+		bpp = 32;
+		break;
+	default:
+		free(uncompr);
+		free(palette);
+		return -CUI_EMATCH;
+	}
+
+	if (bpp) {
+		if (MySaveAsBMP(uncompr, header.uncomprlen, palette, header.palette_length, header.width, 
+				0 - header.height, bpp, (BYTE **)&pkg_res->actual_data, &pkg_res->actual_data_length, my_malloc)) {
+			free(uncompr);
+			free(palette);
+			return -CUI_EMEM;
+		}
+	}
+	free(uncompr);
+	free(palette);
+	pkg_res->flags |= PKG_RES_FLAG_APEXT;
+	pkg_res->replace_extension = _T(".bmp");
+	pkg_res->raw_data = compr;
+	pkg_res->raw_data_length = header.comprlen;
+
+	return 0;
+}
+
+static int sas5_iar_save_resource(struct resource *res, 
+								  struct package_resource *pkg_res)
+{
+	if (!res || !pkg_res)
+		return -CUI_EPARA;
+	
+	if (res->rio->create(res))
+		return -CUI_ECREATE;
+
+	if (pkg_res->actual_data && pkg_res->actual_data_length) {
+		if (res->rio->write(res, pkg_res->actual_data, pkg_res->actual_data_length)) {
+			res->rio->close(res);
+			return -CUI_EWRITE;
+		} 
+	} else if (pkg_res->raw_data && pkg_res->raw_data_length) {
+		if (res->rio->write(res, pkg_res->raw_data, pkg_res->raw_data_length)) {
+			res->rio->close(res);
+			return -CUI_EWRITE;
+		}
+	}
+	res->rio->close(res);
+	
+	return 0;
+}
+
+static void sas5_iar_release_resource(struct package *pkg, 
+									  struct package_resource *pkg_res)
+{
+	if (!pkg || !pkg_res)
+		return;
+
+	if (pkg_res->actual_data) {
+		free(pkg_res->actual_data);
+		pkg_res->actual_data = NULL;
+	}
+	if (pkg_res->raw_data)
+		pkg_res->raw_data = NULL;
+}
+
+static void sas5_iar_release(struct package *pkg, 
+							 struct package_directory *pkg_dir)
+{
+	if (!pkg || !pkg_dir)
+		return;
+
+	if (pkg_dir->directory && pkg_dir->directory_length) {		
+		free(pkg_dir->directory);
+		pkg_dir->directory = NULL;
+	}
+	pkg->pio->close(pkg);
+}
+
+static cui_ext_operation sas5_iar_operation = {
+	sas5_iar_match,					/* match */
+	sas5_iar_extract_directory,		/* extract_directory */
+	sas5_iar_parse_resource_info,	/* parse_resource_info */
+	sas5_iar_extract_resource,		/* extract_resource */
+	sas5_iar_save_resource,			/* save_resource */
+	sas5_iar_release_resource,		/* release_resource */
+	sas5_iar_release				/* release */
+};
+
+/********************* sec5 *********************/
+
+static int sas5_sec5_match(struct package *pkg)
+{
+	s8 magic[4];
+	u32 version;
+		
+	if (!pkg)
+		return -CUI_EPARA;
+	
+	if (pkg->pio->open(pkg, IO_READONLY))
+		return -CUI_EOPEN;
+	
+	if (pkg->pio->read(pkg, magic, sizeof(magic))) {
+		pkg->pio->close(pkg);
+		return -CUI_EREAD;
+	}
+
+	if (strncmp(magic, "SEC5", 4)) {
+		pkg->pio->close(pkg);
+		return -CUI_EMATCH;
+	}
+
+	if (pkg->pio->read(pkg, &version, sizeof(version))) {
+		pkg->pio->close(pkg);
+		return -CUI_EREAD;
+	}
+
+	if (version - 100000 != 2000) {
+		pkg->pio->close(pkg);
+		return -CUI_EMATCH;
+	}
+	
+	return 0;
+}
+
+static int sas5_sec5_extract_resource(struct package *pkg,
+									  struct package_resource *pkg_res)
+{
+	u32 code_length;
+	BYTE *sec5_data;
+	SIZE_T sec5_size;
+	
+	if (!pkg || !pkg_res)
+		return -CUI_EPARA;
+
+	if (pkg->pio->length_of(pkg, &sec5_size))
+		return -CUI_ELEN;
+
+	sec5_data = (BYTE *)malloc(sec5_size);
+	if (!sec5_data)
+		return -CUI_EMEM;
+
+	if (pkg->pio->readvec(pkg, sec5_data, sec5_size, 0, IO_SEEK_SET)) {
+		free(sec5_data);
+		return -CUI_EREADVEC;
+	}
+
+	BYTE *p = sec5_data + 4;
+	*(u32 *)p = 2000;
+	p += 4;
+	while (p < sec5_data + sec5_size) {
+		u32 magic;
+
+		magic = *(u32 *)p;	// block magic
+		p += 4;
+		code_length = *(u32 *)p;
+		p += 4;
+		if (!strncmp((char *)&magic, "CODE", 4))
+			break;
+		p += code_length;
+	}
+	if (p == sec5_data + sec5_size) {
+		free(sec5_data);
+		return -CUI_EMATCH;
+	}
+
+	BYTE key = 0;
+	for (DWORD i = 0; i < code_length; i++) {
+		BYTE v = p[i];
+		p[i] ^= key;
+		key += v + 18;
+	}
+
+	pkg_res->raw_data = sec5_data;
+	pkg_res->raw_data_length = sec5_size;
+
+	return 0;
+}
+
+static int sas5_sec5_save_resource(struct resource *res, 
+								   struct package_resource *pkg_res)
+{
+	if (!res || !pkg_res)
+		return -CUI_EPARA;
+	
+	if (res->rio->create(res))
+		return -CUI_ECREATE;
+
+	if (pkg_res->raw_data && pkg_res->raw_data_length) {
+		if (res->rio->write(res, pkg_res->raw_data, pkg_res->raw_data_length)) {
+			res->rio->close(res);
+			return -CUI_EWRITE;
+		}
+	}
+	res->rio->close(res);
+	
+	return 0;
+}
+
+static void sas5_sec5_release_resource(struct package *pkg, 
+									   struct package_resource *pkg_res)
+{
+	if (!pkg || !pkg_res)
+		return;
+
+	if (pkg_res->raw_data) {
+		free(pkg_res->raw_data);
+		pkg_res->raw_data = NULL;
+	}
+}
+
+static void sas5_sec5_release(struct package *pkg, 
+							 struct package_directory *pkg_dir)
+{
+	if (!pkg)
+		return;
+
+	pkg->pio->close(pkg);
+}
+
+static cui_ext_operation sas5_sec5_operation = {
+	sas5_sec5_match,			/* match */
+	NULL,						/* extract_directory */
+	NULL,						/* parse_resource_info */
+	sas5_sec5_extract_resource,	/* extract_resource */
+	sas5_sec5_save_resource,	/* save_resource */
+	sas5_sec5_release_resource,	/* release_resource */
+	sas5_sec5_release			/* release */
+};
+
+int CALLBACK sas5_register_cui(struct cui_register_callback *callback)
+{
+	if (callback->add_extension(callback->cui, _T(".iar"), NULL, 
+		NULL, &sas5_iar_operation, CUI_EXT_FLAG_PKG | CUI_EXT_FLAG_DIR))
+			return -1;
+
+	if (callback->add_extension(callback->cui, _T(".sec5"), NULL, 
+		NULL, &sas5_sec5_operation, CUI_EXT_FLAG_PKG))
+			return -1;
+
+	return 0;
+}

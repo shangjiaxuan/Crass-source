@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WILD_BUG - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP12.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "WILD_BUG_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\WILD_BUG\WILD_BUG.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP12.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/WILD_BUG.pdb" /machine:I386 /def:".\WILD_BUG.def" /out:"Release/WILD_BUG.dll" /implib:"Release/WILD_BUG.lib"  .\Release\WILD_BUG.obj "
+<h3>Output Window</h3>
+Compiling...
+WILD_BUG.cpp
+Linking...
+   Creating library Release/WILD_BUG.lib and object Release/WILD_BUG.exp
+
+
+
+<h3>Results</h3>
+WILD_BUG.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

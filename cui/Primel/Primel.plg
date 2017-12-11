@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Primel - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP1A1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PRIMEL_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Primel\Primel.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP1A1.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib libeay32.lib /nologo /dll /incremental:no /pdb:"Release/Primel.pdb" /machine:I386 /def:".\Prime.def" /out:"Release/Primel.dll" /implib:"Release/Primel.lib"  .\Release\Primel.obj .\Release\sha256.obj "
+<h3>Output Window</h3>
+Compiling...
+Primel.cpp
+Linking...
+   Creating library Release/Primel.lib and object Release/Primel.exp
+
+
+
+<h3>Results</h3>
+Primel.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

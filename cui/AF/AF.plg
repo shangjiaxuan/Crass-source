@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: AF - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "AF_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\AF\AF.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16C.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/AF.pdb" /machine:I386 /def:".\AF.def" /out:"Release/AF.dll" /implib:"Release/AF.lib"  .\Release\AF.obj "
+<h3>Output Window</h3>
+Compiling...
+AF.cpp
+Linking...
+   Creating library Release/AF.lib and object Release/AF.exp
+
+
+
+<h3>Results</h3>
+AF.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

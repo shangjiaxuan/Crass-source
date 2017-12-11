@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ARCGameEngine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP17D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ARCGAMEENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ARCGameEngine\ARCGameEngine.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP17D.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/ARCGameEngine.pdb" /machine:I386 /def:".\ARCGameEngine.def" /out:"Release/ARCGameEngine.dll" /implib:"Release/ARCGameEngine.lib"  .\Release\ARCGameEngine.obj "
+<h3>Output Window</h3>
+Compiling...
+ARCGameEngine.cpp
+Linking...
+   Creating library Release/ARCGameEngine.lib and object Release/ARCGameEngine.exp
+
+
+
+<h3>Results</h3>
+ARCGameEngine.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

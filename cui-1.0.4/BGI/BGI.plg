@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BGI - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP31.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BGI_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\BGI\BGI.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP31.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/BGI.pdb" /machine:I386 /def:".\BGI.def" /out:"Release/BGI.dll" /implib:"Release/BGI.lib"  ".\Release\BGI.obj" "
+<h3>Output Window</h3>
+Compiling...
+BGI.cpp
+Linking...
+   Creating library Release/BGI.lib and object Release/BGI.exp
+
+
+
+<h3>Results</h3>
+BGI.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

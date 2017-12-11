@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: A98SYS ENGINE - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP8F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "A98SYSENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\A98SYS ENGINE\A98SYS ENGINE.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP8F.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/A98SYS ENGINE.pdb" /machine:I386 /def:".\A98SYS ENGINE.def" /out:"Release/A98SYS ENGINE.dll" /implib:"Release/A98SYS ENGINE.lib"  ".\Release\A98SYS ENGINE.obj" "
+<h3>Output Window</h3>
+Compiling...
+A98SYS ENGINE.cpp
+Linking...
+   Creating library Release/A98SYS ENGINE.lib and object Release/A98SYS ENGINE.exp
+
+
+
+<h3>Results</h3>
+A98SYS ENGINE.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

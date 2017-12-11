@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Village - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA2.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VILLAGE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Village\Village.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA2.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Village.pdb" /machine:I386 /def:".\Village.def" /out:"Release/Village.dll" /implib:"Release/Village.lib"  .\Release\Village.obj "
+<h3>Output Window</h3>
+Compiling...
+Village.cpp
+H:\Crass\cui\Village\Village.cpp(1107) : warning C4101: 'index_length' : unreferenced local variable
+Linking...
+   Creating library Release/Village.lib and object Release/Village.exp
+
+
+
+<h3>Results</h3>
+Village.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RPM_ADV_SYSTEM - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP23B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RPM_ADV_SYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\RPM ADV SYSTEM\RPM_ADV_SYSTEM.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP23B.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib locale.lib /nologo /dll /incremental:no /pdb:"Release/RPM_ADV_SYSTEM.pdb" /machine:I386 /def:".\RPM_ADV_SYSTEM.def" /out:"Release/RPM_ADV_SYSTEM.dll" /implib:"Release/RPM_ADV_SYSTEM.lib"  ".\Release\RPM_ADV_SYSTEM.obj" "
+<h3>Output Window</h3>
+Compiling...
+RPM_ADV_SYSTEM.cpp
+Linking...
+   Creating library Release/RPM_ADV_SYSTEM.lib and object Release/RPM_ADV_SYSTEM.exp
+
+
+
+<h3>Results</h3>
+RPM_ADV_SYSTEM.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

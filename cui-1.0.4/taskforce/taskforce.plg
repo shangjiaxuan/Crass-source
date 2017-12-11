@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: taskforce - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP190.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TASKFORCE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\taskforce\taskforce.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP190.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/taskforce.pdb" /machine:I386 /def:".\taskforce.def" /out:"Release/taskforce.dll" /implib:"Release/taskforce.lib"  ".\Release\taskforce.obj" "
+<h3>Output Window</h3>
+Compiling...
+taskforce.cpp
+Linking...
+   Creating library Release/taskforce.lib and object Release/taskforce.exp
+
+
+
+<h3>Results</h3>
+taskforce.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

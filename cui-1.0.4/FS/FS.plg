@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib shlwapi.lib /nologo /dll /incremental:no /pdb:"Release/FS.pdb" /machine:I386 /def:".\FS.def" /out:"Release/FS.dll" /implib:"Release/FS.lib"  .\Release\FS.obj "
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/FS.lib and object Release/FS.exp
+
+
+
+<h3>Results</h3>
+FS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

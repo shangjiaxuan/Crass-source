@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lambda - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/Lambda.pdb" /machine:I386 /def:".\Lambda.def" /out:"Release/Lambda.dll" /implib:"Release/Lambda.lib"  ".\Release\Lambda.obj" "
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/Lambda.lib and object Release/Lambda.exp
+
+
+
+<h3>Results</h3>
+Lambda.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

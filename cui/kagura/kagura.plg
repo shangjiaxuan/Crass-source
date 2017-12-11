@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: kagura - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPD0.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "KAGURA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\kagura\kagura.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPD0.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/kagura.pdb" /machine:I386 /def:".\kagura.def" /out:"Release/kagura.dll" /implib:"Release/kagura.lib"  .\Release\kagura.obj "
+<h3>Output Window</h3>
+Compiling...
+kagura.cpp
+Linking...
+   Creating library Release/kagura.lib and object Release/kagura.exp
+
+
+
+<h3>Results</h3>
+kagura.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

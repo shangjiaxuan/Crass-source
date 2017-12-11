@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SystemAoi - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP44.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SYSTEMAOI_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\SystemAoi\SystemAoi.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP44.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/SystemAoi.pdb" /machine:I386 /def:".\SystemAoi.def" /out:"Release/SystemAoi.dll" /implib:"Release/SystemAoi.lib"  .\Release\SystemAoi.obj "
+<h3>Output Window</h3>
+Compiling...
+SystemAoi.cpp
+Linking...
+   Creating library Release/SystemAoi.lib and object Release/SystemAoi.exp
+
+
+
+<h3>Results</h3>
+SystemAoi.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

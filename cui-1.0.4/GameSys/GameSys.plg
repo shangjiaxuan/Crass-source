@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GameSys - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPA0.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "GAMESYS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\GameSys\GameSys.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPA0.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/GameSys.pdb" /machine:I386 /def:".\GameSys.def" /out:"Release/GameSys.dll" /implib:"Release/GameSys.lib"  ".\Release\GameSys.obj" "
+<h3>Output Window</h3>
+Compiling...
+GameSys.cpp
+Linking...
+   Creating library Release/GameSys.lib and object Release/GameSys.exp
+
+
+
+<h3>Results</h3>
+GameSys.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

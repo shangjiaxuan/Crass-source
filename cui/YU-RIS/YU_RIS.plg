@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: YU_RIS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP1ED.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "YU_RIS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\YU-RIS\YU-RIS.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP1ED.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/YU_RIS.pdb" /machine:I386 /def:".\YU-RIS.def" /out:"Release/YU_RIS.dll" /implib:"Release/YU_RIS.lib"  ".\Release\YU-RIS.obj" "
+<h3>Output Window</h3>
+Compiling...
+YU-RIS.cpp
+Linking...
+   Creating library Release/YU_RIS.lib and object Release/YU_RIS.exp
+
+
+
+<h3>Results</h3>
+YU_RIS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

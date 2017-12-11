@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CoreSystem2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3AF.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CORESYSTEM2_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\CoreSystem2\CoreSystem2.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3AF.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/CoreSystem2.pdb" /machine:I386 /def:".\CoreSystem2.def" /out:"Release/CoreSystem2.dll" /implib:"Release/CoreSystem2.lib"  .\Release\CoreSystem2.obj "
+<h3>Output Window</h3>
+Compiling...
+CoreSystem2.cpp
+Linking...
+   Creating library Release/CoreSystem2.lib and object Release/CoreSystem2.exp
+
+
+
+<h3>Results</h3>
+CoreSystem2.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

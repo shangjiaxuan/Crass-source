@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BSXX - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP1BD.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BSXX_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\BSXX\BSXX.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP1BD.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/BSXX.pdb" /machine:I386 /def:".\BSXX.def" /out:"Release/BSXX.dll" /implib:"Release/BSXX.lib"  .\Release\BSXX.obj "
+<h3>Output Window</h3>
+Compiling...
+BSXX.cpp
+H:\Crass\cui\BSXX\BSXX.cpp(592) : error C2065: 'CUI_EXT_FLAG_NO_EXT' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+BSXX.dll - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

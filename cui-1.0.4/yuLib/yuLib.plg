@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: yuLib - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "YULIB_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\yuLib\yuLib.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56B.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/yuLib.pdb" /machine:I386 /def:".\yuLib.def" /out:"Release/yuLib.dll" /implib:"Release/yuLib.lib"  .\Release\yuLib.obj "
+<h3>Output Window</h3>
+Compiling...
+yuLib.cpp
+Linking...
+   Creating library Release/yuLib.lib and object Release/yuLib.exp
+
+
+
+<h3>Results</h3>
+yuLib.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

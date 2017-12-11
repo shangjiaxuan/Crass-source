@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RISUSOFT - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP49.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RISUSOFT_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\RISUSOFT\RISUSOFT.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP49.tmp" 
+Creating command line "link.exe kernel32.lib libeay32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/RISUSOFT.pdb" /machine:I386 /def:".\RISUSOFT.def" /out:"Release/RISUSOFT.dll" /implib:"Release/RISUSOFT.lib"  .\Release\RISUSOFT.obj "
+<h3>Output Window</h3>
+Compiling...
+RISUSOFT.cpp
+Linking...
+   Creating library Release/RISUSOFT.lib and object Release/RISUSOFT.exp
+
+
+
+<h3>Results</h3>
+RISUSOFT.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

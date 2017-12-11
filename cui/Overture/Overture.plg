@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Overture - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "OVERTURE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\CRASS\CUI\Overture\Overture.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/Overture.pdb" /machine:I386 /out:"Release/Overture.dll" /implib:"Release/Overture.lib"  .\Release\Overture.obj "
+<h3>Output Window</h3>
+Compiling...
+Overture.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Overture.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

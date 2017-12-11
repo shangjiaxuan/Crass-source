@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: KAAS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP5A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "KAAS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\KAAS\KAAS.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP5A.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/KAAS.pdb" /machine:I386 /def:".\KAAS.def" /out:"Release/KAAS.dll" /implib:"Release/KAAS.lib"  .\Release\KAAS.obj "
+<h3>Output Window</h3>
+Compiling...
+KAAS.cpp
+Linking...
+   Creating library Release/KAAS.lib and object Release/KAAS.exp
+
+
+
+<h3>Results</h3>
+KAAS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Stuff - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib  shlwapi.lib /nologo /dll /incremental:no /pdb:"Release/Stuff.pdb" /machine:I386 /def:".\Stuff.def" /out:"Release/Stuff.dll" /implib:"Release/Stuff.lib"  ".\Release\Stuff.obj" "
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/Stuff.lib and object Release/Stuff.exp
+
+
+
+<h3>Results</h3>
+Stuff.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: System4 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP271.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SYSTEM4_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\System4\System4.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP271.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/System4.pdb" /machine:I386 /def:".\System4.def" /out:"Release/System4.dll" /implib:"Release/System4.lib"  .\Release\mt19937int.obj .\Release\System4.obj "
+<h3>Output Window</h3>
+Compiling...
+System4.cpp
+Linking...
+   Creating library Release/System4.lib and object Release/System4.exp
+
+
+
+<h3>Results</h3>
+System4.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bakuretsu - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPF7.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BAKURETSU_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\bakuretsu\bakuretsu.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPF7.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/bakuretsu.pdb" /machine:I386 /def:".\bakuretsu.def" /out:"Release/bakuretsu.dll" /implib:"Release/bakuretsu.lib"  .\Release\bakuretsu.obj "
+<h3>Output Window</h3>
+Compiling...
+bakuretsu.cpp
+Linking...
+   Creating library Release/bakuretsu.lib and object Release/bakuretsu.exp
+
+
+
+<h3>Results</h3>
+bakuretsu.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

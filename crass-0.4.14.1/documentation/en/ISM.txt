@@ -1,0 +1,10 @@
+﻿Name: 		ISM
+Description: 	ISM script engine (http://hp.vector.co.jp/authors/VA000482/)
+Archive: 	.isa
+Author: 	痴漢公賊 (glanser@163.com)
+Version: 	1.0.2
+Status: 	Alpha
+
+【ChangeLog】
+2009-07-23 12:31 ver 1.0.2 enhance the automatic discovery for variable-length index entry
+2007-04-27 10:36 ver 1.0.0 1st version released

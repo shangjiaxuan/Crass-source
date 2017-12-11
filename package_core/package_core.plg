@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: package_core - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP50.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PACKAGE_CORE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\package_core\package_core.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP50.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib utility.lib io_request.lib /nologo /dll /incremental:no /pdb:"Release/package_core.pdb" /machine:I386 /out:"Release/package_core.dll" /implib:"Release/package_core.lib"  .\Release\package_core.obj "
+<h3>Output Window</h3>
+Compiling...
+package_core.cpp
+Linking...
+   Creating library Release/package_core.lib and object Release/package_core.exp
+
+
+
+<h3>Results</h3>
+package_core.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

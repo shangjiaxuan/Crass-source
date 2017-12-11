@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ADVSystem - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP44.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ADVSYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ADVSystem\ADVSystem.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP44.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/ADVSystem.pdb" /machine:I386 /def:".\ADVSystem.def" /out:"Release/ADVSystem.dll" /implib:"Release/ADVSystem.lib"  .\Release\ADVSystem.obj "
+<h3>Output Window</h3>
+Compiling...
+ADVSystem.cpp
+Linking...
+   Creating library Release/ADVSystem.lib and object Release/ADVSystem.exp
+
+
+
+<h3>Results</h3>
+ADVSystem.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

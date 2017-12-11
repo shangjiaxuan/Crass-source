@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cmvs - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP55.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CMVS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\cmvs\cmvs.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP55.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/cmvs.pdb" /machine:I386 /def:".\cmvs.def" /out:"Release/cmvs.dll" /implib:"Release/cmvs.lib"  .\Release\cmvs.obj .\Release\cmvs_md5.obj .\Release\md5.obj "
+<h3>Output Window</h3>
+Compiling...
+cmvs.cpp
+Linking...
+   Creating library Release/cmvs.lib and object Release/cmvs.exp
+
+
+
+<h3>Results</h3>
+cmvs.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

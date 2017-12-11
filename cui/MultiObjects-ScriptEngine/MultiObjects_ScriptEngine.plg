@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MultiObjects_ScriptEngine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP34C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MULTIOBJECTS_SCRIPTENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\MultiObjects-ScriptEngine\MultiObjects_ScriptEngine.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP34C.tmp" 
+Creating temporary file "q:\Temp\RSP34D.tmp" with contents
+[
+kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/MultiObjects_ScriptEngine.pdb" /machine:I386 /def:".\MultiObjects_ScriptEngine.def" /out:"Release/MultiObjects_ScriptEngine.dll" /implib:"Release/MultiObjects_ScriptEngine.lib" 
+".\Release\MultiObjects_ScriptEngine.obj"
+]
+Creating command line "link.exe @q:\Temp\RSP34D.tmp"
+<h3>Output Window</h3>
+Compiling...
+MultiObjects_ScriptEngine.cpp
+Linking...
+   Creating library Release/MultiObjects_ScriptEngine.lib and object Release/MultiObjects_ScriptEngine.exp
+
+
+
+<h3>Results</h3>
+MultiObjects_ScriptEngine.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Irrlicht Engine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPB4.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "IRRLICHTENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Irrlicht Engine\Irrlicht Engine.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPB4.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/Irrlicht Engine.pdb" /machine:I386 /def:".\Irrlicht Engine.def" /out:"Release/Irrlicht Engine.dll" /implib:"Release/Irrlicht Engine.lib"  ".\Release\Irrlicht Engine.obj" "
+<h3>Output Window</h3>
+Compiling...
+Irrlicht Engine.cpp
+Linking...
+   Creating library Release/Irrlicht Engine.lib and object Release/Irrlicht Engine.exp
+Irrlicht Engine.exp : warning LNK4070: /OUT:Irrlicht_Engine.dll directive in .EXP differs from output filename "Release/Irrlicht Engine.dll"; ignoring directive
+
+
+
+<h3>Results</h3>
+Irrlicht Engine.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

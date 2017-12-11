@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Game Script Player - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP199.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "GAMESCRIPTPLAYER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Game Script Player\Game Script Player.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP199.tmp" 
+Creating temporary file "q:\Temp\RSP19A.tmp" with contents
+[
+kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Game Script Player.pdb" /machine:I386 /def:".\Game Script Player.def" /out:"Release/Game Script Player.dll" /implib:"Release/Game Script Player.lib" 
+".\Release\Game Script Player.obj"
+]
+Creating command line "link.exe @q:\Temp\RSP19A.tmp"
+<h3>Output Window</h3>
+Compiling...
+Game Script Player.cpp
+Linking...
+   Creating library Release/Game Script Player.lib and object Release/Game Script Player.exp
+
+
+
+<h3>Results</h3>
+Game Script Player.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

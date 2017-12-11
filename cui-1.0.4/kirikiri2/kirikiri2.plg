@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: kirikiri2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPE1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "KIRIKIRI2_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\kirikiri2\kirikiri2.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPE1.tmp" 
+Creating temporary file "q:\Temp\RSPE2.tmp" with contents
+[
+kernel32.lib zdll.lib utility.lib shlwapi.lib locale.lib /nologo /dll /incremental:no /pdb:"Release/kirikiri2.pdb" /machine:I386 /def:".\kirikiri2.def" /out:"Release/kirikiri2.dll" /implib:"Release/kirikiri2.lib" 
+".\Release\11eyes_cxdec.obj"
+".\Release\beniten_cxdec.obj"
+".\Release\ConcertoNote_cxdec.obj"
+".\Release\cxdec.obj"
+".\Release\EXE_cxdec.obj"
+".\Release\FairChild_cxdec.obj"
+".\Release\FairChildTrial_cxdec.obj"
+".\Release\fanta_cxdec.obj"
+".\Release\FHA_cxdec.obj"
+".\Release\haruiro_cxdec.obj"
+".\Release\kinomino_cxdec.obj"
+".\Release\kurenai_cxdec.obj"
+".\Release\lovebattle_cxdec.obj"
+".\Release\lovelaby_cxdec.obj"
+".\Release\mogla_cxdec.obj"
+".\Release\natukana_cxdec.obj"
+".\Release\natukanaTrial_cxdec.obj"
+".\Release\nidaime_cxdec.obj"
+".\Release\nidaimeTrial_cxdec.obj"
+".\Release\ojo2.obj"
+".\Release\ojyo_cxdec.obj"
+".\Release\ruitomo_cxdec.obj"
+".\Release\ruitomoTrial_cxdec.obj"
+".\Release\silverblue_cxdec.obj"
+".\Release\tenshin_cxdec.obj"
+".\Release\tenshinTrial_cxdec.obj"
+".\Release\towa_cxdec.obj"
+".\Release\checksum.obj"
+".\Release\dec.obj"
+".\Release\kirikiri2.obj"
+".\Release\tpm_dec.obj"
+".\Release\xp3filter_decode.obj"
+]
+Creating command line "link.exe @q:\Temp\RSPE2.tmp"
+<h3>Output Window</h3>
+Compiling...
+kirikiri2.cpp
+Linking...
+   Creating library Release/kirikiri2.lib and object Release/kirikiri2.exp
+
+
+
+<h3>Results</h3>
+kirikiri2.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

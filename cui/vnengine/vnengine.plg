@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: vnengine - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP125.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VNENGINE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\vnengine\vnengine.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP125.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/vnengine.pdb" /machine:I386 /def:".\vnengine.def" /out:"Release/vnengine.dll" /implib:"Release/vnengine.lib"  .\Release\vnengine.obj "
+<h3>Output Window</h3>
+Compiling...
+vnengine.cpp
+Linking...
+   Creating library Release/vnengine.lib and object Release/vnengine.exp
+
+
+
+<h3>Results</h3>
+vnengine.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

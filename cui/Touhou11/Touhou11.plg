@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Touhou11 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP225.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TOUHOU11_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Touhou11\Touhou11.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP225.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Touhou11.pdb" /machine:I386 /def:".\Touhou11.def" /out:"Release/Touhou11.dll" /implib:"Release/Touhou11.lib"  .\Release\Touhou11.obj "
+<h3>Output Window</h3>
+Compiling...
+Touhou11.cpp
+Linking...
+   Creating library Release/Touhou11.lib and object Release/Touhou11.exp
+
+
+
+<h3>Results</h3>
+Touhou11.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

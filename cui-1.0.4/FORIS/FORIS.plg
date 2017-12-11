@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FORIS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP60.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "FORIS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\FORIS\FORIS.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP60.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/FORIS.pdb" /machine:I386 /def:".\FORIS.def" /out:"Release/FORIS.dll" /implib:"Release/FORIS.lib"  ".\Release\FORIS.obj" "
+<h3>Output Window</h3>
+Compiling...
+FORIS.cpp
+Linking...
+   Creating library Release/FORIS.lib and object Release/FORIS.exp
+
+
+
+<h3>Results</h3>
+FORIS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

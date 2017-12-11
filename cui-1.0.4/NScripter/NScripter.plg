@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NScripter - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP11A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NSCRIPTER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\NScripter\NScripter.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP11A.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib libeay32.lib /nologo /dll /incremental:no /pdb:"Release/NScripter.pdb" /machine:I386 /def:".\NScripter.def" /out:"Release/NScripter.dll" /implib:"Release/NScripter.lib"  ".\Release\NScripter.obj" "
+<h3>Output Window</h3>
+Compiling...
+NScripter.cpp
+Linking...
+   Creating library Release/NScripter.lib and object Release/NScripter.exp
+
+
+
+<h3>Results</h3>
+NScripter.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Selene - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP18F.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SELENE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Selene\Selene.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP18F.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Selene.pdb" /machine:I386 /def:".\Selene.def" /out:"Release/Selene.dll" /implib:"Release/Selene.lib"  .\Release\Selene.obj "
+<h3>Output Window</h3>
+Compiling...
+Selene.cpp
+Linking...
+   Creating library Release/Selene.lib and object Release/Selene.exp
+
+
+
+<h3>Results</h3>
+Selene.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ValkyrieComplex - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP276.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "VALKYRIECOMPLEX_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ValkyrieComplex\ValkyrieComplex.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP276.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/ValkyrieComplex.pdb" /machine:I386 /def:".\ValkyrieComplex.def" /out:"Release/ValkyrieComplex.dll" /implib:"Release/ValkyrieComplex.lib"  .\Release\ValkyrieComplex.obj "
+<h3>Output Window</h3>
+Compiling...
+ValkyrieComplex.cpp
+Linking...
+   Creating library Release/ValkyrieComplex.lib and object Release/ValkyrieComplex.exp
+
+
+
+<h3>Results</h3>
+ValkyrieComplex.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

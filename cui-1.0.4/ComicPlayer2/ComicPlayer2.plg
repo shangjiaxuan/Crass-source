@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ComicPlayer2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP11E.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "COMICPLAYER2_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ComicPlayer2\ComicPlayer2.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP11E.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/ComicPlayer2.pdb" /machine:I386 /def:".\ComicPlayer2.def" /out:"Release/ComicPlayer2.dll" /implib:"Release/ComicPlayer2.lib"  .\Release\ComicPlayer2.obj "
+<h3>Output Window</h3>
+Compiling...
+ComicPlayer2.cpp
+Linking...
+   Creating library Release/ComicPlayer2.lib and object Release/ComicPlayer2.exp
+
+
+
+<h3>Results</h3>
+ComicPlayer2.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: YukaScript - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/YukaScript.pdb" /machine:I386 /def:".\YukaScript.def" /out:"Release/YukaScript.dll" /implib:"Release/YukaScript.lib"  ".\Release\YukaScript.obj" "
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/YukaScript.lib and object Release/YukaScript.exp
+
+
+
+<h3>Results</h3>
+YukaScript.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

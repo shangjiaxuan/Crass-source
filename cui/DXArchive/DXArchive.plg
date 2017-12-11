@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DXArchive - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP52.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DXARCHIVE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\DXArchive\DXArchive.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP52.tmp" 
+Creating temporary file "q:\Temp\RSP53.tmp" with contents
+[
+kernel32.lib utility.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/DXArchive.pdb" /machine:I386 /def:".\DXArchive.def" /out:"Release/DXArchive.dll" /implib:"Release/DXArchive.lib" 
+.\Release\DXArchive.obj
+]
+Creating command line "link.exe @q:\Temp\RSP53.tmp"
+<h3>Output Window</h3>
+Compiling...
+DXArchive.cpp
+Linking...
+   Creating library Release/DXArchive.lib and object Release/DXArchive.exp
+
+
+
+<h3>Results</h3>
+DXArchive.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 666_SYSTEM - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP159.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MY666_SYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\666-SYSTEM\666_SYSTEM.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP159.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/666_SYSTEM.pdb" /machine:I386 /def:".\666_SYSTEM.def" /out:"Release/666_SYSTEM.dll" /implib:"Release/666_SYSTEM.lib"  ".\Release\666_SYSTEM.obj" "
+<h3>Output Window</h3>
+Compiling...
+666_SYSTEM.cpp
+Linking...
+   Creating library Release/666_SYSTEM.lib and object Release/666_SYSTEM.exp
+666_SYSTEM.exp : warning LNK4070: /OUT:666-SYSTEM.dll directive in .EXP differs from output filename "Release/666_SYSTEM.dll"; ignoring directive
+
+
+
+<h3>Results</h3>
+666_SYSTEM.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

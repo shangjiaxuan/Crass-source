@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DAC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP20D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DAC_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\DAC\DAC.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP20D.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib locale.lib shlwapi.lib /nologo /dll /incremental:no /pdb:"Release/DAC.pdb" /machine:I386 /def:".\DAC.def" /out:"Release/DAC.dll" /implib:"Release/DAC.lib"  .\Release\DAC.obj "
+<h3>Output Window</h3>
+Compiling...
+DAC.cpp
+Linking...
+   Creating library Release/DAC.lib and object Release/DAC.exp
+
+
+
+<h3>Results</h3>
+DAC.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

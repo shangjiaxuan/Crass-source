@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: utility - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP34.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "UTILITY_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\utility\utility.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP34.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib user32.lib locale.lib Ws2_32.lib /nologo /dll /incremental:no /pdb:"Release/utility.pdb" /machine:I386 /out:"Release/utility.dll" /implib:"Release/utility.lib"  .\Release\bits.obj .\Release\my.obj .\Release\utility.obj "
+<h3>Output Window</h3>
+Compiling...
+utility.cpp
+Linking...
+   Creating library Release/utility.lib and object Release/utility.exp
+
+
+
+<h3>Results</h3>
+utility.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

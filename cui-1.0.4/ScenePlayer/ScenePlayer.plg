@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ScenePlayer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPB8.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "SCENEPLAYER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ScenePlayer\ScenePlayer.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPB8.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/ScenePlayer.pdb" /machine:I386 /def:".\ScenePlayer.def" /out:"Release/ScenePlayer.dll" /implib:"Release/ScenePlayer.lib"  .\Release\ScenePlayer.obj "
+<h3>Output Window</h3>
+Compiling...
+ScenePlayer.cpp
+Linking...
+   Creating library Release/ScenePlayer.lib and object Release/ScenePlayer.exp
+
+
+
+<h3>Results</h3>
+ScenePlayer.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

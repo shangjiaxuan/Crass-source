@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CIRCUS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPAA.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CIRCUS_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\CIRCUS\CIRCUS.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPAA.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/CIRCUS.pdb" /machine:I386 /def:".\CIRCUS.def" /out:"Release/CIRCUS.dll" /implib:"Release/CIRCUS.lib"  .\Release\CIRCUS.obj "
+<h3>Output Window</h3>
+Compiling...
+CIRCUS.cpp
+Linking...
+   Creating library Release/CIRCUS.lib and object Release/CIRCUS.exp
+
+
+
+<h3>Results</h3>
+CIRCUS.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

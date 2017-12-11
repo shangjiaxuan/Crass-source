@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: EtherVapor - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP43C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ETHERVAPOR_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\EtherVapor\EtherVapor.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP43C.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/EtherVapor.pdb" /machine:I386 /def:".\EtherVapor.def" /out:"Release/EtherVapor.dll" /implib:"Release/EtherVapor.lib"  ".\Release\EtherVapor.obj" "
+<h3>Output Window</h3>
+Compiling...
+EtherVapor.cpp
+Linking...
+   Creating library Release/EtherVapor.lib and object Release/EtherVapor.exp
+
+
+
+<h3>Results</h3>
+EtherVapor.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

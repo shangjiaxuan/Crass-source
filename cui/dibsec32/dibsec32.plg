@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dibsec32 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPED.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "DIBSEC32_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\dibsec32\dibsec32.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPED.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/dibsec32.pdb" /machine:I386 /def:".\dibsec32.def" /out:"Release/dibsec32.dll" /implib:"Release/dibsec32.lib"  ".\Release\dibsec32.obj" "
+<h3>Output Window</h3>
+Compiling...
+dibsec32.cpp
+Linking...
+   Creating library Release/dibsec32.lib and object Release/dibsec32.exp
+
+
+
+<h3>Results</h3>
+dibsec32.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

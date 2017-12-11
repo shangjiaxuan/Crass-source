@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: J2WIN - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP227.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "J2WIN_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\J2WIN\J2WIN.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP227.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/J2WIN.pdb" /machine:I386 /def:".\J2WIN.def" /out:"Release/J2WIN.dll" /implib:"Release/J2WIN.lib"  .\Release\J2WIN.obj "
+<h3>Output Window</h3>
+Compiling...
+J2WIN.cpp
+Linking...
+   Creating library Release/J2WIN.lib and object Release/J2WIN.exp
+
+
+
+<h3>Results</h3>
+J2WIN.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

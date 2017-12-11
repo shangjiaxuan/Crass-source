@@ -1,0 +1,247 @@
+﻿ Ver 0.4.14.1 痴漢公賊
+【cui】
+·插件YU-RIS升级为开发版1.0.0。
+利用后缀'.'找到解密资源名称的key。
+http://www.aishare.net/link.php?ref=isc8FjmiLx
+·插件DXArchive升级为测试版1.0.1。
+支持游戏“明日はきっと、晴れますように -She said so，and prayed to cloudy skies.-”。
+http://www.aishare.net/link.php?ref=AL4r1lnJN6
+·插件kirikiri2升级为正式版1.5.5。
+加入game=himesyo解密参数。
+·插件NeXAS升级为测试版1.0.1。
+准确匹配pac封包。
+http://www.aishare.net/link.php?ref=rRuDc95Suy
+·插件NekoBoard升级为测试版1.1.3。
+避免使用不匹配的模式进行提取。
+http://www.aishare.net/link.php?ref=4pQFmPQ855
+·插件ISM升级为开发版1.0.2。
+增强针对变长索引项结构自动检测的能力。
+
+
+
+[090731] 77～And, two stars meet again～
+yfp提取不能
+[090731][Symphony]Tiara 初回版 
+bakuretsu
+
+Disk 1 Part1-5
+http://www.namipan.com/d/FF1_DIS ... ca0f45d70c60078fc05
+http://www.namipan.com/d/FF1_DIS ... 247555c3ad40078fc05
+http://www.namipan.com/d/FF1_DIS ... 21d3e2a344b0078fc05
+http://www.namipan.com/d/FF1_DIS ... 90a726ae4a20078fc05
+http://www.namipan.com/d/FF1_DIS ... 0d6e21854c721e84002
+
+Disk 2 Part1-4
+http://www.namipan.com/d/FF_DISC ... 9df78b4d79b0078fc05
+http://www.namipan.com/d/FF_DISC ... b0b5d50735b0078fc05
+http://www.namipan.com/d/FF_DISC ... 101514df87e0078fc05
+http://www.namipan.com/d/FF_DISC ... 208248adf4b1866e505
+
+RF自然死
+Disk 1 Part1-5
+http://www.rayfile.com/files/433 ... -a887-0019d11a795f/
+http://www.rayfile.com/files/fe9 ... -bbfe-0019d11a795f/
+http://www.rayfile.com/files/522 ... -8529-0019d11a795f/
+http://www.rayfile.com/files/b38 ... -bdb2-0019d11a795f/
+http://www.rayfile.com/files/89e ... -88ef-0014221b798a/
+
+Disk 2 Part1-4
+http://www.rayfile.com/files/91a ... -9055-0014221b798a/
+http://www.rayfile.com/files/776 ... -9fe4-0014221b798a/
+http://www.rayfile.com/files/0eb ... -9191-0014221b798a/
+http://www.rayfile.com/files/bdd ... -95b4-0019d11a795f/
+
+解压缩密码是论坛域名 www.otomedream.com
+
+這個其實只要Disk1就可以了...
+麻煩大大看完以后,把上面幾個下載鏈接刪掉
+
+H:\Crass\cui\ADX\vgmstream-r526\src\coding
+
+http://www.lightnovel.cn/viewthread.php?tid=100074&extra=page%3D1
+http://www.lightnovel.cn/viewthread.php?tid=3885&extra=page%3D1&page=1
+http://www.lightnovel.cn/viewthread.php?tid=84982&extra=page%3D1&page=1
+http://www.lightnovel.cn/viewthread.php?tid=70351&extra=page%3D1&page=1
+http://www.lightnovel.cn/viewthread.php?tid=78561&extra=page%3D4%26amp%3Bfilter%3Dtype%26amp%3Btypeid%3D51
+ga675an
+
+REALLIVE:nwa提取:Q:\areas_trial\Areas_懱尡斉\REALLIVEDATA
+H:\Crass\cui\ADX\vgmstream-r526\src\coding:nwa_decoder.c
+
+System4: PM
+女医ふる: M:\Program Files\jyoiful
+1。M.E.s. －同級生メイド調教－[4.40G]
+J:\Temp\mes_web1
+old ags: 4.W:\そこに海があって
+npf: use exnpf(asmodean)
+old C4: Q:\[unpack]\[C4]ボクのヒミツたいけん + Q:\【C4】
+ADVSyste:Y:\璃瑠・瑪瑠姉妹のもっと×2　おしえて！お兄ちゃん先生
+
+【FFA System】
+【BLACK PACKAGE TRY】
+返済性奴
+凌襲～禁忌の牝肉実験調書～
+牝奴の館（ひんどのやかた）
+【BLACK PACKAGE】
+6人の女教師
+【あらもーど】
+ふたりのえりか～幼なじみと今彼女と～
+M:\trial\x1wind.zip
+Z:\ぷちぷちご奉仕
+q:\h6wind.exe
+q:\x2wind.exe
+
+【kakuya】
+【アトリエかぐや Honky-Tonk Pumpkin】
+毎日がM！
+新妻イカせてミルク！ 団地妻、昼下がりの下半身事情
+【アトリエかぐや Berkshire Yorkshire】
+プリマ☆ステラ
+【アトリエかぐや TEAM HEARTBEAT】
+ダンジョンクルセイダーズ2～永劫の楽土～
+
+【Overture】
+【カクテル・ソフト】
+Pia▼キャロットへようこそ!!G.P.
+Pia▼キャロットへようこそ!!G.O. SE～Special Edition～
+Pia▼キャロットへようこそ!!G.P. FD
+【F＆C・FC01】
+かみてん－死神と天使（ふたり）が俺を狙ってる－
+
+【GLib2】
+【H＋（エイチプラス）】
+新妻女教師
+ひきこもり向け人妻せんせい
+【CAGE（ケージ）】
+Pure妹ミルクぷるん♪
+
+【cmvs】
+【パープルソフトウェア】
+秋箱（秋色恋華＋秋色謳華）
+春色桜瀬
+明日の七海と逢うために～明日の君と逢うために～FAN DISC
+
+【WBP】
+【STRIKES】
+凌辱人妻倶楽部
+【かすたーど】
+エッチなメイドさんは好きですか？
+H:\trial\[WBP]AniSeed  レクタンドール戦記 レヴォラシオン\REVO_TRY
+Q:\【UNKNOWN】 [STRIKES][WBP].zip
+F:\unpack\[WBP]FESTA!! -HYPER GIRLS POP
+Y:\Hなメイドさんは好きですか？
+
+【TCD】
+【CIRCUS】
+D.C.P.K.～ダ・カーポーカー～
+【STUDIO邪恋】
+操心術3
+H:\Downloads\DCPK
+J:\憖怱弍俁懱尡斉
+Q:\Program Files\WAKAN (TCD2)
+F:\unpack\[TCD]AQUAS（アクアス）
+
+【rUGP】
+【アージュ】
+君が望む永遠 ～Latest Edition～
+【ファイアージュ】
+ぴこぴこ～恋する気持の眠る場所～
+
+【SystemAoi】
+【ソフトハウスキャ】
+ウィザーズクライマー
+
+【PlumZERO】
+【PlumZERO】
+姦系図～ゆとり君の逆襲～
+
+【Macromedia director】
+【Selen】
+借金姉妹2 LIMITED EDITION
+
+【CatSystem2】
+【ういんどみる】
+ツナバン▽らぶみくす
+
+【NME】
+【M no VIOLET】
+美学 YURIKA＆ASUNA
+
+M:\TYRELL LAB
+Q:\【UNKNOWN】:
+(18禁ゲーム)[080725][TYRELL LAB]EVE雀 初回版 (iso+mds+rr).rar
+(18禁ゲーム)[080725][TYRELL LAB]EVE雀 初回版 SpecialDisc(iso+rr).rar
+
+http://comic.kukudm.com/comiclist/711/index.htm
+http://comic.kukudm.com/comiclist/710/index.htm
+
+备选：
+http://rapidshare.com/
+http://disk.iqho.com/
+http://www.2shared.com/
+http://www.gazup.com/
+http://www.myupload.dk/
+http://www.pixelhit.com/
+http://www.damipan.com/
+http://www.jsharer.com/
+http://www.zshare.net/
+http://www.4shared-china.com/
+working：
+http://drop.io/
+http://kewlshare.com/
+http://vspace.cc/
+http://hotfile.com/
+http://www.megaupload.com/
+testing:
+www.sharebee.com
+http://www.gazup.com/
+
+
+
+
+
+
+
+
+http://www.tsukuru.info/tlwiki/index.php?title=Tools
+http://qiufen.bbspink.com/test/read.cgi/hgame/1233668721
+
+http://www.china-pub.com/39884&ref=ps
+http://www.china-pub.com/195640&ref=browse
+
+http://www.dm5.com/Comic/MH60/Comics-60228_2a4fc97f_page-8.htm
+http://dm.idler-et.com/comiclist/826/
+http://www.yxfo.com/comic/3540/
+http://git.kernel.org/?p=linux/kernel/git/cloos/cfs-2.6.git;a=blob;f=include/linux/sched.h;h=7a4c8d5574f7e3f646d0de8b40c792033f717ce2;hb=30ce95e320e374cf76b173193064202180e24516
+http://git.kernel.org/?p=linux/kernel/git/cloos/cfs-2.6.git;a=blob;f=kernel/sched.c;h=cd4529dd1e56f2ce097af7589dc69df4a1b7e958;hb=30ce95e320e374cf76b173193064202180e24516
+
+僕の牝秘書は同級生[479m]
+
+
+
+
+h ttp://www.getchu.com/soft.phtml?id=21669
+h ttp://www.tactics.ne.jp/%7Eliquid/mesu
+
+
+種子：
+h ttp://www.jandown.com/link.php?ref=YaXGntriUy
+
+ままにょにょ[720M]
+
+下载链接h ttp://www.jsharer.com/
+提取码: 7241249313996062
+提取码: 8821249307845796
+提取码: 9531249307845781
+提取码: 7311249307845625
+
+酒酿乌织汤圆
+
+Key 10th Memorial BOX[8.16G]
+http://bbs4.2djgame.net/viewthread.php?tid=263047&extra=page%3D1
+
+ABANDONER[3.01G]
+种子：
+http://www.91files.com/?TSMYP3XF0T4KJ7AUQ2CG
+http://disk.iqho.com/mcncc.php?Mcncc=M-0bF3r70TJ4
+http://www.seedurl.com/link.php?ref=tuJM43PYsG

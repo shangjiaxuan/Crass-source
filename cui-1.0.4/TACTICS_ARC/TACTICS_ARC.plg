@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TACTICS_ARC - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSPE1.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TACTICS_ARC_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\TACTICS_ARC\TACTICS_ARC.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSPE1.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/TACTICS_ARC.pdb" /machine:I386 /def:".\TACTICS_ARC.def" /out:"Release/TACTICS_ARC.dll" /implib:"Release/TACTICS_ARC.lib"  ".\Release\TACTICS_ARC.obj" "
+<h3>Output Window</h3>
+Compiling...
+TACTICS_ARC.cpp
+Linking...
+   Creating library Release/TACTICS_ARC.lib and object Release/TACTICS_ARC.exp
+
+
+
+<h3>Results</h3>
+TACTICS_ARC.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

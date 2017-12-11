@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ARCG - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP134.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ARCG_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\ARCG\ARCG.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP134.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/ARCG.pdb" /machine:I386 /def:".\ARCG.def" /out:"Release/ARCG.dll" /implib:"Release/ARCG.lib"  .\Release\ARCG.obj "
+<h3>Output Window</h3>
+Compiling...
+ARCG.cpp
+H:\Crass\cui\ARCG\ARCG.cpp(206) : warning C4133: '-' : incompatible types - from 'void *' to 'unsigned char *'
+Linking...
+   Creating library Release/ARCG.lib and object Release/ARCG.exp
+
+
+
+<h3>Results</h3>
+ARCG.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

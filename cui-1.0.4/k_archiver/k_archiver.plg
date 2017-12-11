@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: k_archiver - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP22B.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "K_ARCHIVER_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\k_archiver\k_archiver.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP22B.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib locale.lib /nologo /dll /incremental:no /pdb:"Release/k_archiver.pdb" /machine:I386 /def:".\k_archive.def" /out:"Release/k_archiver.dll" /implib:"Release/k_archiver.lib"  ".\Release\k_archiver.obj" "
+<h3>Output Window</h3>
+Compiling...
+k_archiver.cpp
+Linking...
+   Creating library Release/k_archiver.lib and object Release/k_archiver.exp
+
+
+
+<h3>Results</h3>
+k_archiver.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: N2System - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP26A.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "N2SYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.4\N2System\N2System.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP26A.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/N2System.pdb" /machine:I386 /def:".\N2System.def" /out:"Release/N2System.dll" /implib:"Release/N2System.lib"  ".\Release\N2System.obj" "
+<h3>Output Window</h3>
+Compiling...
+N2System.cpp
+Linking...
+   Creating library Release/N2System.lib and object Release/N2System.exp
+
+
+
+<h3>Results</h3>
+N2System.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

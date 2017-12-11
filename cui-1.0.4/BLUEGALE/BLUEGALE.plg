@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: BLUEGALE - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP208.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BLUEGALE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\BLUEGALE\BLUEGALE.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP208.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/BLUEGALE.pdb" /machine:I386 /def:".\BLUEGALE.def" /out:"Release/BLUEGALE.dll" /implib:"Release/BLUEGALE.lib"  .\Release\BLUEGALE.obj "
+<h3>Output Window</h3>
+Compiling...
+BLUEGALE.cpp
+Linking...
+   Creating library Release/BLUEGALE.lib and object Release/BLUEGALE.exp
+
+
+
+<h3>Results</h3>
+BLUEGALE.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Ellefin_Game_System - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP226.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "ELLEFIN_GAME_SYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Ellefin_Game_System\Ellefin_Game_System.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP226.tmp" 
+Creating temporary file "q:\Temp\RSP227.tmp" with contents
+[
+kernel32.lib shlwapi.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Ellefin_Game_System.pdb" /machine:I386 /def:".\Ellefin_Game_System.def" /out:"Release/Ellefin_Game_System.dll" /implib:"Release/Ellefin_Game_System.lib" 
+.\Release\Ellefin_Game_System.obj
+]
+Creating command line "link.exe @q:\Temp\RSP227.tmp"
+<h3>Output Window</h3>
+Compiling...
+Ellefin_Game_System.cpp
+Linking...
+   Creating library Release/Ellefin_Game_System.lib and object Release/Ellefin_Game_System.exp
+
+
+
+<h3>Results</h3>
+Ellefin_Game_System.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

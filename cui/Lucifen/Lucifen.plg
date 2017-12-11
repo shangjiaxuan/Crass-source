@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Lucifen - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP21C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "LUCIFEN_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\Lucifen\Lucifen.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP21C.tmp" 
+Creating temporary file "q:\Temp\RSP21D.tmp" with contents
+[
+kernel32.lib utility.lib shlwapi.lib user32.lib package_core.lib locale.lib /nologo /dll /incremental:no /pdb:"Release/Lucifen.pdb" /machine:I386 /def:".\Lucifen.def" /out:"Release/Lucifen.dll" /implib:"Release/Lucifen.lib" 
+.\Release\Lucifen.obj
+]
+Creating command line "link.exe @q:\Temp\RSP21D.tmp"
+<h3>Output Window</h3>
+Compiling...
+Lucifen.cpp
+Linking...
+   Creating library Release/Lucifen.lib and object Release/Lucifen.exp
+
+
+
+<h3>Results</h3>
+Lucifen.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: crage - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP96.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\crage\crage.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP96.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib shell32.lib utility.lib acui_core.lib package_core.lib resource_core.lib locale.lib /nologo /subsystem:console /incremental:no /pdb:"Release/crage.pdb" /machine:I386 /out:"Release/crage.exe"  .\Release\crage.obj "
+<h3>Output Window</h3>
+Compiling...
+crage.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+crage.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

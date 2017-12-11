@@ -1,0 +1,20 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Touhou105 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/Touhou105.pdb" /machine:I386 /def:".\Touhou105.def" /out:"Release/Touhou105.dll" /implib:"Release/Touhou105.lib"  ".\Release\Touhou105.obj" ".\Release\mt19937ar.obj" "
+<h3>Output Window</h3>
+Linking...
+   Creating library Release/Touhou105.lib and object Release/Touhou105.exp
+
+
+
+<h3>Results</h3>
+Touhou105.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

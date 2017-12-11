@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: GSX - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP122.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "GSX_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\GSX\GSX.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP122.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/GSX.pdb" /machine:I386 /out:"Release/GSX.dll" /implib:"Release/GSX.lib"  .\Release\GSX.obj "
+<h3>Output Window</h3>
+Compiling...
+GSX.cpp
+H:\Crass\cui\GSX\GSX.cpp(217) : error C2065: 'GSX_K5_operation' : undeclared identifier
+H:\Crass\cui\GSX\GSX.cpp(221) : error C2065: 'GSX_gsdb_operation' : undeclared identifier
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+GSX.dll - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: resource_core - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP8C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RESOURCE_CORE_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\resource_core\resource_core.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP8C.tmp" 
+Creating command line "link.exe kernel32.lib shlwapi.lib io_request.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/resource_core.pdb" /machine:I386 /out:"Release/resource_core.dll" /implib:"Release/resource_core.lib"  .\Release\resource_core.obj "
+<h3>Output Window</h3>
+Compiling...
+resource_core.cpp
+Linking...
+   Creating library Release/resource_core.lib and object Release/resource_core.exp
+
+
+
+<h3>Results</h3>
+resource_core.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

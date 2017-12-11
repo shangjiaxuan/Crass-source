@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CaramelBox - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP86.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "CARAMELBOX_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\CaramelBox\CaramelBox.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP86.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/CaramelBox.pdb" /machine:I386 /def:".\CaramelBox.def" /out:"Release/CaramelBox.dll" /implib:"Release/CaramelBox.lib"  .\Release\CaramelBox.obj "
+<h3>Output Window</h3>
+Compiling...
+CaramelBox.cpp
+Linking...
+   Creating library Release/CaramelBox.lib and object Release/CaramelBox.exp
+
+
+
+<h3>Results</h3>
+CaramelBox.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NEJII - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP790.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "NEJII_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\NEJII\NEJII.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP790.tmp" 
+Creating command line "link.exe kernel32.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/NEJII.pdb" /machine:I386 /def:".\NEJII.def" /out:"Release/NEJII.dll" /implib:"Release/NEJII.lib"  ".\Release\NEJII.obj" "
+<h3>Output Window</h3>
+Compiling...
+NEJII.cpp
+Linking...
+   Creating library Release/NEJII.lib and object Release/NEJII.exp
+
+
+
+<h3>Results</h3>
+NEJII.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

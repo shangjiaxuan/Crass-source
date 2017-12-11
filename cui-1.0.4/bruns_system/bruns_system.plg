@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bruns_system - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP72.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "BRUNS_SYSTEM_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\bruns_system\bruns_system.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP72.tmp" 
+Creating command line "link.exe kernel32.lib zdll.lib utility.lib /nologo /dll /incremental:no /pdb:"Release/bruns_system.pdb" /machine:I386 /def:".\bruns_system.def" /out:"Release/bruns_system.dll" /implib:"Release/bruns_system.lib"  .\Release\bruns_system.obj "
+<h3>Output Window</h3>
+Compiling...
+bruns_system.cpp
+Linking...
+   Creating library Release/bruns_system.lib and object Release/bruns_system.exp
+
+
+
+<h3>Results</h3>
+bruns_system.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

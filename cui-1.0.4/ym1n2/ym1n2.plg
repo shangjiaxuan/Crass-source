@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ym1n2 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP133.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "YM1N2_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\ym1n2\ym1n2.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP133.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/ym1n2.pdb" /machine:I386 /def:".\ym1n2.def" /out:"Release/ym1n2.dll" /implib:"Release/ym1n2.lib"  ".\Release\ym1n2.obj" "
+<h3>Output Window</h3>
+Compiling...
+ym1n2.cpp
+Linking...
+   Creating library Release/ym1n2.lib and object Release/ym1n2.exp
+
+
+
+<h3>Results</h3>
+ym1n2.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

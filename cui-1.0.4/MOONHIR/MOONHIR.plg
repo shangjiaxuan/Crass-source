@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MOONHIR - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP7D.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "MOONHIR_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui-1.0.3\MOONHIR\MOONHIR.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP7D.tmp" 
+Creating command line "link.exe kernel32.lib /nologo /dll /incremental:no /pdb:"Release/MOONHIR.pdb" /machine:I386 /def:".\MOONHIR.def" /out:"Release/MOONHIR.dll" /implib:"Release/MOONHIR.lib"  ".\Release\MOONHIR.obj" "
+<h3>Output Window</h3>
+Compiling...
+MOONHIR.cpp
+H:\Crass\cui-1.0.3\MOONHIR\MOONHIR.cpp(340) : warning C4553: '==' : operator has no effect; did you intend '='?
+Linking...
+   Creating library Release/MOONHIR.lib and object Release/MOONHIR.exp
+
+
+
+<h3>Results</h3>
+MOONHIR.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TechArts3D - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP62C.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "TECHARTS3D_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\TechArts3D\TechArts3D.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP62C.tmp" 
+Creating temporary file "q:\Temp\RSP62D.tmp" with contents
+[
+kernel32.lib utility.lib user32.lib /nologo /dll /incremental:no /pdb:"Release/TechArts3D.pdb" /machine:I386 /def:".\TechArts3D.def" /out:"Release/TechArts3D.dll" /implib:"Release/TechArts3D.lib" 
+.\Release\mt19937ar.obj
+.\Release\TechArts3D.obj
+]
+Creating command line "link.exe @q:\Temp\RSP62D.tmp"
+<h3>Output Window</h3>
+Compiling...
+TechArts3D.cpp
+Linking...
+   Creating library Release/TechArts3D.lib and object Release/TechArts3D.exp
+
+
+
+<h3>Results</h3>
+TechArts3D.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

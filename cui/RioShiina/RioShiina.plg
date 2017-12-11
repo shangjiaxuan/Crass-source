@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: RioShiina - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "q:\Temp\RSP210.tmp" with contents
+[
+/nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "RIOSHIINA_EXPORTS" /D "UNICODE" /D "_UNICODE" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\Crass\cui\RioShiina\RioShiina.cpp"
+]
+Creating command line "cl.exe @q:\Temp\RSP210.tmp" 
+Creating temporary file "q:\Temp\RSP211.tmp" with contents
+[
+kernel32.lib utility.lib zdll.lib /nologo /dll /incremental:no /pdb:"Release/RioShiina.pdb" /machine:I386 /def:".\RioShiina.def" /out:"Release/RioShiina.dll" /implib:"Release/RioShiina.lib" 
+.\Release\decode_table.obj
+.\Release\qsmodel.obj
+.\Release\rangecod.obj
+.\Release\RioShiina.obj
+]
+Creating command line "link.exe @q:\Temp\RSP211.tmp"
+<h3>Output Window</h3>
+Compiling...
+RioShiina.cpp
+Linking...
+   Creating library Release/RioShiina.lib and object Release/RioShiina.exp
+
+
+
+<h3>Results</h3>
+RioShiina.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
